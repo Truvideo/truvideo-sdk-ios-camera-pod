@@ -11,6 +11,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => 'https://github.com/Truvideo/truvideo-sdk-ios-camera-pod.git', :tag => spec.version.to_s }
 
-  spec.vendored_frameworks = ['TruvideoSdkCamera.xcframework', 'shared.xcframework']
+  spec.vendored_frameworks = ['TruvideoSdkCamera.xcframework']
 
 end
