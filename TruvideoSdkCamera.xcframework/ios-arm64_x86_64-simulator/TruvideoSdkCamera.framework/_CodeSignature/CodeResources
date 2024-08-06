@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		CU4U6RinPNHf+3xql42gVPn63DI=
+		8rFAy1OlsU8IuWpBSivktga6L18=
 		</data>
 		<key>Headers/ShaderTypes.h</key>
 		<data>
@@ -22,55 +22,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iIz1vweH5sBt95LSg864rUHTKBE=
-		</data>
-		<key>Modules/TruvideoSdkCamera.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		rYQ5/V/uVELsffj9pq8BveoGeuE=
-		</data>
-		<key>Modules/TruvideoSdkCamera.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		Nd5jAVb53bbodnyeoCjyY8mvszI=
+		jdF39h9unF/iWrrPE8iPG/pmMPE=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9ZmtoNb6L09bQStqCPcRbSYelWk=
+		2DKTOdQyr69gZU5YT6p4pqIoBFQ=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		c9eZ2y7mnIIALoTlT5BjPxzO38U=
+		uQghXu5orDdnk7Ge1pfoxXqq4bk=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WcoWl6puRh4kFCHauhwB36iDY/Q=
+		PjyJepzoMk+fAfMBP40/ChYt2vs=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		c9eZ2y7mnIIALoTlT5BjPxzO38U=
+		uQghXu5orDdnk7Ge1pfoxXqq4bk=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3a1q2JOPT9uXgwnCC+6B3Asfv8s=
+		/JSH0SXGAVabd/kouGF8mgdmjU0=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9ZmtoNb6L09bQStqCPcRbSYelWk=
+		2DKTOdQyr69gZU5YT6p4pqIoBFQ=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kTx8Jk8AFnhHCyoE5U1yBy6WmTo=
+		5AsdLISqxnvB1Vkm1vyJHIU3d7E=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		I+bYv0qtmOaDPO8riMkPQAjOzMM=
+		x/0QZFlBYe3EL3hcK1mfPgmMZxc=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kTx8Jk8AFnhHCyoE5U1yBy6WmTo=
+		5AsdLISqxnvB1Vkm1vyJHIU3d7E=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VhQpaYfujg78f3v29MuXehZt6A8=
+		XU35UUt+fm43t0nvE3+vg+1ntPQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +74,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		QvA1S3/nqH0YVmFecpXPfH5AI74=
+		lVeNwk0YM9S1A+/DdLJhBg7FIeI=
 		</data>
 		<key>pointer.obj</key>
 		<data>
@@ -99,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			apGaKGpsqTwXQG1MpUKxaS3TaW44GFrOxoiUBHPQ1F4=
+			qb8Tb6xSldE0nBCO8xQ7pCIxvJUfcsqjwsrM6FM8IcI=
 			</data>
 		</dict>
 		<key>Headers/ShaderTypes.h</key>
@@ -123,88 +115,74 @@
 			l+sl7pjnP3d8z1G2VcTFjfM94cGGv+fD3Z3Q285wA7o=
 			</data>
 		</dict>
-		<key>Modules/TruvideoSdkCamera.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			aXxdNy6FcFhsXkYr7ej3U0uLYUpYq1JgYJLcGT9KQb0=
-			</data>
-		</dict>
-		<key>Modules/TruvideoSdkCamera.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qWrkTAeYwzqr5wkKiSpGXHxY4gESUxzNUFpykLdYTrA=
-			</data>
-		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bba5mXJLF+3CBhq7lXMEz1DNfw+NpPlypzXR9eeUQVQ=
+			AdesDytxZkP+vOd3OkuSxA1/SGKxFvnByzEWikmTP2Q=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sBvDHTzCrd3ZOCTIgBHqymwu1sWGtt0FwBjmEwHF2TI=
+			E4mNojic3LOocWxAARq8H6ARJ+Veh+d/WuEVdPWV604=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2c2epVW0550d8sTK6fr3FyBjZZGHyEjHbL5mkbCDnZs=
+			zkRNB+IES3O+RlStHmyrZFEjaQK+U7I4js1v+Vg77Bo=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sBvDHTzCrd3ZOCTIgBHqymwu1sWGtt0FwBjmEwHF2TI=
+			E4mNojic3LOocWxAARq8H6ARJ+Veh+d/WuEVdPWV604=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0liuDQGQwMHSBlgAhlVyqCBKVg7K7imSJI0G2g0Rvso=
+			En3iWDZHhHIatlsya2hBYMTie2OI9ua3vysuZRA2ubU=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bba5mXJLF+3CBhq7lXMEz1DNfw+NpPlypzXR9eeUQVQ=
+			AdesDytxZkP+vOd3OkuSxA1/SGKxFvnByzEWikmTP2Q=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gXyHGKnRZnTQ98mm5FBMii/8Hv9hNRn5zh2PFLBKPnA=
+			cZjq1tlEgrxXR56X3dfb3De42piXls+g2KYB1YaykFo=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Shh0IFkwufBPeUye/PUteK1cRoIshg3kaDFZJQftGV4=
+			86abgPvCuOv07AWO3n4VKSxh775zD7Y5Ql4FgfYxKI0=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gXyHGKnRZnTQ98mm5FBMii/8Hv9hNRn5zh2PFLBKPnA=
+			cZjq1tlEgrxXR56X3dfb3De42piXls+g2KYB1YaykFo=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pzDiqvuJEifTBYHzc6WpIgH2pVlrJX/4T/CIx7H4zOo=
+			PpVskz168YZASYtV1ch1ngfCWPzoI9QYhI0fMqbYGVE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -225,7 +203,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DbxqBWtXo6eocvnUWFTtbXQSKz7SVMvavE6Yag7Gy2s=
+			NsPobhb8+c/5LkEpoa5Ha80tdiYUklqsiD23+s8g1F8=
 			</data>
 		</dict>
 		<key>pointer.obj</key>
