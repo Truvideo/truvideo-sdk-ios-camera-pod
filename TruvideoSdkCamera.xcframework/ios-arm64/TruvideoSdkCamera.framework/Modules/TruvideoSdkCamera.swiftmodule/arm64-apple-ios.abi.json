@@ -7343,8 +7343,8 @@
       "filePath": "\/Users\/vagrant\/git\/CI.swift",
       "kind": "StringLiteral",
       "offset": 152,
-      "length": 6,
-      "value": "\"BETA\""
+      "length": 4,
+      "value": "\"RC\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/TruvideoSdkCamera\/Core\/Spacing\/TruVideoSpacing.swift",
