@@ -24,6 +24,7 @@ import simd
 public let TruvideoSdkCamera: any TruvideoSdkCamera.TruvideoSdkCameraInterface
 public protocol TruvideoSdkCameraInterface {
   var camera: any TruvideoSdkCamera.TruvideoSdkCameraDelegate { get }
+  var events: TruvideoSdkCamera.TruvideoSdkCameraEventObserver { get }
 }
 public protocol TruvideoSdkCameraDelegate {
   var neededOrientation: UIKit.UIInterfaceOrientationMask { get }
@@ -122,6 +123,25 @@ extension SwiftUI.View {
             mode: .videoAndPicture()
         ), onComplete: @escaping (TruvideoSdkCamera.TruvideoSdkCameraResult) -> Swift.Void) -> some SwiftUI.View
   
+}
+public enum TruvideoSdkCameraEventType {
+  case truvideoSdkCameraEventFlashModeChanged(flashMode: TruvideoSdkCamera.TruvideoSdkCameraFlashMode)
+  case truvideoSdkCameraEventCameraFlipped(lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing)
+  case truvideoSdkCameraEventMediaContinue(media: [TruvideoSdkCamera.TruvideoSdkCameraMedia])
+  case truvideoSdkCameraEventMediaDeleted(media: TruvideoSdkCamera.TruvideoSdkCameraMedia)
+  case truvideoSdkCameraEventMediaDiscard(media: [TruvideoSdkCamera.TruvideoSdkCameraMedia])
+  case truvideoSdkCameraEventPictureTaken(media: TruvideoSdkCamera.TruvideoSdkCameraMedia)
+  case truvideoSdkCameraEventRecordingFinished(media: TruvideoSdkCamera.TruvideoSdkCameraMedia)
+  case truvideoSdkCameraEventRecordingPaused(resolution: TruvideoSdkCamera.TruvideoSdkCameraResolution, orientation: TruvideoSdkCamera.TruvideoSdkCameraOrientation, lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing)
+  case truvideoSdkCameraEventRecordingResumed(resolution: TruvideoSdkCamera.TruvideoSdkCameraResolution, orientation: TruvideoSdkCamera.TruvideoSdkCameraOrientation, lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing)
+  case truvideoSdkCameraEventRecordingStarted(resolution: TruvideoSdkCamera.TruvideoSdkCameraResolution, orientation: TruvideoSdkCamera.TruvideoSdkCameraOrientation, lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing)
+  case truvideoSdkCameraEventResolutionChanged(resolution: TruvideoSdkCamera.TruvideoSdkCameraResolution)
+  case truvideoSdkCameraEventZoomChanged(zoom: Swift.Float)
+}
+public typealias TruvideoSdkCameraEventObserver = Combine.AnyPublisher<TruvideoSdkCamera.TruvideoSdkCameraEvent, Swift.Never>
+public struct TruvideoSdkCameraEvent {
+  public let type: TruvideoSdkCamera.TruvideoSdkCameraEventType
+  public let createdAt: Foundation.Date
 }
 public enum TruvideoSdkCameraLensFacing : Swift.String, Swift.Decodable {
   case back
