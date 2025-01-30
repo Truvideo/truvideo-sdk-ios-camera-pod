@@ -277,6 +277,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -308,6 +311,209 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+enum TruvideoSdkCameraFlashMode : NSInteger;
+@class TruvideoSdkCameraMediaMode;
+enum TruvideoSdkCameraOrientation : NSInteger;
+
+/// Configuration for the AR Camera
+SWIFT_CLASS("_TtC17TruvideoSdkCamera32TruvideoSdkARCameraConfiguration")
+@interface TruvideoSdkARCameraConfiguration : NSObject
+/// Flas mode
+@property (nonatomic, readonly) enum TruvideoSdkCameraFlashMode flashMode;
+/// Media capture mode
+@property (nonatomic, readonly, strong) TruvideoSdkCameraMediaMode * _Nonnull mode;
+/// Camera orientation
+@property (nonatomic, readonly) enum TruvideoSdkCameraOrientation orientation;
++ (TruvideoSdkARCameraConfiguration * _Nonnull)instantiateWith:(enum TruvideoSdkCameraFlashMode)flashMode orientation:(enum TruvideoSdkCameraOrientation)orientation mode:(TruvideoSdkCameraMediaMode * _Nonnull)mode SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIApplication;
+@class UIWindow;
+
+SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera28TruvideoSdkCameraAppDelegate_")
+@protocol TruvideoSdkCameraAppDelegate <UIApplicationDelegate>
+@property (nonatomic) UIInterfaceOrientationMask orientationLock;
+- (UIInterfaceOrientationMask)application:(UIApplication * _Nonnull)application supportedInterfaceOrientationsForWindow:(UIWindow * _Nullable)window SWIFT_WARN_UNUSED_RESULT;
+@end
+
+enum TruvideoSdkCameraLensFacing : NSInteger;
+@class NSString;
+@class TruvideoSdkCameraResolution;
+
+SWIFT_CLASS("_TtC17TruvideoSdkCamera30TruvideoSdkCameraConfiguration")
+@interface TruvideoSdkCameraConfiguration : NSObject
+@property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
+@property (nonatomic, readonly) enum TruvideoSdkCameraFlashMode flashMode;
+@property (nonatomic, readonly) enum TruvideoSdkCameraOrientation orientation;
+@property (nonatomic, readonly, copy) NSString * _Nonnull outputPath;
+@property (nonatomic, readonly, strong) TruvideoSdkCameraMediaMode * _Nonnull mode;
++ (TruvideoSdkCameraConfiguration * _Nonnull)instantiateWith:(enum TruvideoSdkCameraLensFacing)lensFacing flashMode:(enum TruvideoSdkCameraFlashMode)flashMode orientation:(enum TruvideoSdkCameraOrientation)orientation outputPath:(NSString * _Nonnull)outputPath frontResolutions:(NSArray<TruvideoSdkCameraResolution *> * _Nonnull)frontResolutions frontResolution:(TruvideoSdkCameraResolution * _Nullable)frontResolution backResolutions:(NSArray<TruvideoSdkCameraResolution *> * _Nonnull)backResolutions backResolution:(TruvideoSdkCameraResolution * _Nullable)backResolution mode:(TruvideoSdkCameraMediaMode * _Nonnull)mode SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class TruvideoSdkCameraInformation;
+
+SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera25TruvideoSdkCameraDelegate_")
+@protocol TruvideoSdkCameraDelegate
+/// Get all sdk camera information for back and front camera
+///
+/// returns:
+/// Object with all available information for back and front camera
+- (TruvideoSdkCameraInformation * _Nonnull)getTruvideoSdkCameraInformation SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC17TruvideoSdkCamera23TruvideoSdkCameraDevice")
+@interface TruvideoSdkCameraDevice : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+@property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
+@property (nonatomic, readonly, copy) NSArray<TruvideoSdkCameraResolution *> * _Nonnull resolutions;
+@property (nonatomic, readonly) BOOL withFlash;
+@property (nonatomic, readonly) BOOL isTapToFocusEnabled;
+@property (nonatomic, readonly) NSInteger sensorOrientation;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraFlashMode, open) {
+  TruvideoSdkCameraFlashModeOff = 0,
+  TruvideoSdkCameraFlashModeOn = 1,
+};
+
+
+SWIFT_CLASS("_TtC17TruvideoSdkCamera28TruvideoSdkCameraInformation")
+@interface TruvideoSdkCameraInformation : NSObject
+@property (nonatomic, readonly, strong) TruvideoSdkCameraDevice * _Nullable frontCamera;
+@property (nonatomic, readonly, strong) TruvideoSdkCameraDevice * _Nullable backCamera;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Interface to access the <code>TruvideoSdkCamera</code> functionalities
+SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera26TruvideoSdkCameraInterface_")
+@protocol TruvideoSdkCameraInterface
+/// Engine to perform noise cancellation actions
+@property (nonatomic, readonly, strong) id <TruvideoSdkCameraDelegate> _Nonnull camera;
+- (void)configureTruvideoSdkAppDelegate:(id <TruvideoSdkCameraAppDelegate> _Nonnull)appDelegate;
+@end
+
+typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraLensFacing, open) {
+  TruvideoSdkCameraLensFacingBack = 0,
+  TruvideoSdkCameraLensFacingFront = 1,
+};
+
+enum TruvideoSdkCameraMediaType : NSInteger;
+
+SWIFT_CLASS("_TtC17TruvideoSdkCamera22TruvideoSdkCameraMedia")
+@interface TruvideoSdkCameraMedia : NSObject
+@property (nonatomic, readonly) double createdAt;
+@property (nonatomic, readonly, copy) NSString * _Nonnull filePath;
+@property (nonatomic, readonly) enum TruvideoSdkCameraMediaType type;
+@property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing cameraLensFacing;
+@property (nonatomic, readonly) enum TruvideoSdkCameraOrientation rotation;
+@property (nonatomic, readonly, strong) TruvideoSdkCameraResolution * _Nonnull resolution;
+@property (nonatomic, readonly) int64_t duration;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSNumber;
+
+SWIFT_CLASS("_TtC17TruvideoSdkCamera26TruvideoSdkCameraMediaMode")
+@interface TruvideoSdkCameraMediaMode : NSObject
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithVideoCount:(NSNumber * _Nullable)videoCount pictureCount:(NSNumber * _Nullable)pictureCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSSinglePicture SWIFT_WARN_UNUSED_RESULT;
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoOrPictureWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoWithVideoCount:(NSNumber * _Nullable)videoCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSPictureWithPictureCount:(NSNumber * _Nullable)pictureCount SWIFT_WARN_UNUSED_RESULT;
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithMediaCount:(NSNumber * _Nonnull)mediaCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraMediaType, open) {
+  TruvideoSdkCameraMediaTypeClip = 0,
+  TruvideoSdkCameraMediaTypePhoto = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraOrientation, open) {
+  TruvideoSdkCameraOrientationPortrait = 0,
+  TruvideoSdkCameraOrientationLandscapeLeft = 1,
+  TruvideoSdkCameraOrientationLandscapeRight = 2,
+  TruvideoSdkCameraOrientationPortraitReverse = 3,
+};
+
+
+SWIFT_CLASS("_TtC17TruvideoSdkCamera25TruvideoSdkCameraProvider")
+@interface TruvideoSdkCameraProvider : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <TruvideoSdkCameraInterface> _Nonnull shared;)
++ (id <TruvideoSdkCameraInterface> _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17TruvideoSdkCamera27TruvideoSdkCameraResolution")
+@interface TruvideoSdkCameraResolution : NSObject
+@property (nonatomic, readonly) int32_t width;
+- (nonnull instancetype)initWithWidth:(int32_t)width height:(int32_t)height OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// A result of the recording session.
+SWIFT_CLASS("_TtC17TruvideoSdkCamera23TruvideoSdkCameraResult")
+@interface TruvideoSdkCameraResult : NSObject
+/// The media recorded during the session.
+@property (nonatomic, readonly, copy) NSArray<TruvideoSdkCameraMedia *> * _Nonnull media;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+enum TruvideoSdkCameraScannerCodeFormat : NSInteger;
+
+/// Scanner camera result
+SWIFT_CLASS("_TtC17TruvideoSdkCamera28TruvideoSdkCameraScannerCode")
+@interface TruvideoSdkCameraScannerCode : NSObject
+/// Scanned code raw data
+@property (nonatomic, readonly, copy) NSString * _Nonnull data;
+/// Scanned code type
+@property (nonatomic, readonly) enum TruvideoSdkCameraScannerCodeFormat format;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Supported code formats
+typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraScannerCodeFormat, open) {
+/// Code-39 barcode
+  TruvideoSdkCameraScannerCodeFormatCode39 = 0,
+/// Code-93 barcode
+  TruvideoSdkCameraScannerCodeFormatCode93 = 1,
+/// QR Code
+  TruvideoSdkCameraScannerCodeFormatCodeQR = 2,
+/// DataMatrix
+  TruvideoSdkCameraScannerCodeFormatDataMatrix = 3,
+};
+
+
+/// Scanner camera configuration
+SWIFT_CLASS("_TtC17TruvideoSdkCamera37TruvideoSdkScannerCameraConfiguration")
+@interface TruvideoSdkScannerCameraConfiguration : NSObject
+/// Flash mode
+@property (nonatomic, readonly) enum TruvideoSdkCameraFlashMode flashMode;
+/// Orientation
+@property (nonatomic, readonly) enum TruvideoSdkCameraOrientation orientation;
+/// Auto-close option
+@property (nonatomic, readonly) BOOL autoClose;
++ (TruvideoSdkScannerCameraConfiguration * _Nonnull)instantiateWith:(enum TruvideoSdkCameraFlashMode)flashMode orientation:(enum TruvideoSdkCameraOrientation)orientation autoClose:(BOOL)autoClose SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 
@@ -316,6 +522,30 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+@interface UIViewController (SWIFT_EXTENSION(TruvideoSdkCamera))
+/// Present the camera view over the full screen
+/// \param onComplete A callback with the recording result
+///
+- (void)presentTruvideoSdkScannerCameraViewWithPreset:(TruvideoSdkScannerCameraConfiguration * _Nonnull)preset onComplete:(void (^ _Nonnull)(TruvideoSdkCameraScannerCode * _Nullable))onComplete;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(TruvideoSdkCamera))
+/// Present the camera view over the full screen
+/// \param onComplete A callback with the recording result
+///
+- (void)presentTruvideoSdkCameraViewWithPreset:(TruvideoSdkCameraConfiguration * _Nonnull)preset onComplete:(void (^ _Nonnull)(TruvideoSdkCameraResult * _Nonnull))onComplete;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(TruvideoSdkCamera))
+/// Present the AR camera view over the full screen
+/// \param onComplete A callback with the recording result
+///
+- (void)presentTruvideoSdkARCameraViewWithPreset:(TruvideoSdkARCameraConfiguration * _Nonnull)preset onComplete:(void (^ _Nonnull)(TruvideoSdkCameraResult * _Nonnull))onComplete;
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)
