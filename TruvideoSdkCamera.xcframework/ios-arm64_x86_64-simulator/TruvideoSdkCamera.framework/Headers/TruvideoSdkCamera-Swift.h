@@ -319,6 +319,31 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// A registry for the TruVideo SDK Camera library that provides library metadata and configuration.
+SWIFT_CLASS("_TtC17TruvideoSdkCamera16SDKCameraLibrary")
+@interface SDKCameraLibrary : NSObject
+/// Registers the camera library with the SDK’s library registry.
+/// This static method registers the camera library instance with the global
+/// library registry system. It should be called during SDK initialization
+/// to ensure the camera library is properly registered and available for
+/// dependency injection and service discovery.
++ (void)register;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 enum TruvideoSdkCameraFlashMode : NSInteger;
 @class TruvideoSdkCameraMediaMode;
 enum TruvideoSdkCameraOrientation : NSInteger;
@@ -419,78 +444,151 @@ SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera28TruvideoSdkCameraAppDelegate_")
 - (UIInterfaceOrientationMask)application:(UIApplication * _Nonnull)application supportedInterfaceOrientationsForWindow:(UIWindow * _Nullable)window SWIFT_WARN_UNUSED_RESULT;
 @end
 
+enum TruvideoSdkCameraImageFormat : NSInteger;
 enum TruvideoSdkCameraLensFacing : NSInteger;
 @class NSString;
-enum TruvideoSdkCameraImageFormat : NSInteger;
-@class TruvideoSdkCameraResolution;
 
-/// A configuration object for setting up the camera in <code>TruvideoSdkCamera</code>.
-/// <code>TruvideoSdkCameraConfiguration</code> allows developers to customize the camera’s behavior, including <em>lens selection, flash settings, orientation, resolution management, and media output</em>.
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraConfig = TruvideoSdkCameraConfiguration(
-///     lensFacing: .back,
-///     flashMode: .auto,
-///     orientation: .portrait,
-///     outputPath: "media_output.mp4",
-///     frontResolutions: [],
-///     frontResolution: nil,
-///     backResolutions: [],
-///     backResolution: nil,
-///     mode: .videoOnly
-/// )
-///
-/// \endcodeThis configuration can be passed to <code>presentTruvideoSdkCameraView</code> to launch the camera with the specified settings.
-/// note:
-/// If no orientation is provided, the default device orientation will be used.
-/// <h2>See Also</h2>
-/// <ul>
-///   <li>
-///     <code>TruvideoSdkCameraLensFacing</code>
-///   </li>
-///   <li>
-///     <code>TruvideoSdkCameraFlashMode</code>
-///   </li>
-///   <li>
-///     <code>TruvideoSdkCameraOrientation</code>
-///   </li>
-/// </ul>
+/// A configuration object that defines camera behavior and capture settings.
+/// This class encapsulates all the settings needed to configure the camera
+/// for media capture, including lens selection, flash behavior, image format,
+/// resolution options, and capture mode limits. It provides a centralized
+/// way to manage camera configuration and ensures consistent behavior
+/// across different capture sessions.
+/// The configuration supports both front and back camera lenses, multiple
+/// resolution options, various flash modes, and flexible media capture
+/// modes. All settings have sensible defaults to simplify common use cases
+/// while still allowing fine-grained customization when needed.
+/// This class is designed to be Objective-C compatible and can be easily
+/// integrated into existing iOS applications.
 SWIFT_CLASS("_TtC17TruvideoSdkCamera30TruvideoSdkCameraConfiguration")
 @interface TruvideoSdkCameraConfiguration : NSObject
-/// The selected camera lens facing mode.
-/// Determines whether the <em>front</em> or <em>rear</em> camera is used for media capture.
-@property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
 /// The flash mode setting for the camera.
-/// Determines whether the <em>flash is enabled or disabled</em> during capture.
+/// This property determines how the camera flash behaves during capture.
+/// Options include off, on, auto, and other flash modes depending on
+/// device capabilities and lighting conditions.
 @property (nonatomic, readonly) enum TruvideoSdkCameraFlashMode flashMode;
-/// The camera orientation used when capturing media.
-/// Specifies whether the camera operates in <em>portrait or landscape mode</em>.
-@property (nonatomic, readonly) enum TruvideoSdkCameraOrientation orientation;
-/// The output file path where the recorded media will be saved.
-/// Defines the storage location of the <em>captured photos or recorded videos</em>.
-@property (nonatomic, readonly, copy) NSString * _Nonnull outputPath;
-/// Defines the camera’s capture mode.
-/// Determines whether the camera captures <em>photos, videos, or both</em>.
+/// The image format for captured photos.
+/// This property specifies the file format used for saving captured
+/// images. Common formats include JPEG, PNG, and HEIC. The format
+/// affects file size, quality, and compatibility with different systems.
+@property (nonatomic, readonly) enum TruvideoSdkCameraImageFormat imageFormat;
+/// Indicates whether high-resolution photo capture is enabled.
+/// When enabled, the camera will capture photos at the highest
+/// available resolution for the selected camera lens. This may
+/// impact performance and file size but provides maximum image quality.
+@property (nonatomic, readonly) BOOL isHighResolutionPhotoEnabled;
+/// The camera lens to use for capture.
+/// This property specifies whether to use the front-facing or
+/// back-facing camera lens. The choice affects the perspective
+/// and capabilities available during capture.
+@property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
+/// The media capture mode and limits.
+/// This property defines what types of media can be captured
+/// (pictures, videos, or both) and sets limits on the number
+/// of items and duration for each media type.
 @property (nonatomic, readonly, strong) TruvideoSdkCameraMediaMode * _Nonnull mode;
-/// Defines the camera’s capture mode.
-/// Determines whether the camera captures <em>photos, videos, or both</em>.
-@property (nonatomic) BOOL isHighResolutionPhotoEnabled;
-/// Defines the camera’s UI
-/// Determines whether the camera will be presented with the new or legacy UI design
-@property (nonatomic) BOOL isNewLayoutEnabled;
-/// Defines the camera’s photo output file format
-/// Determines wether the output file format is <em>png or jpeg</em>
-@property (nonatomic) enum TruvideoSdkCameraImageFormat imageFormat;
-/// Defines behavior when moving to background
-/// Pauses the the recording when moving to background and concatenate them at the end using FFMPEG
-@property (nonatomic) BOOL pauseVideoWhenMovingToBackground;
-/// Instantiates a new <code>TruvideoSdkCameraConfiguration</code> using static method syntax.
+/// The directory path where captured media will be saved.
+/// This property specifies the file system location where
+/// captured pictures and videos will be stored. The path
+/// should be writable and accessible by the application.
+@property (nonatomic, readonly, copy) NSString * _Nonnull outputPath;
+/// Creates a new camera configuration with essential settings.
+/// This initializer provides a simplified way to configure the camera with the most
+/// commonly used settings. It offers sensible defaults for all parameters while still
+/// allowing customization when needed. This is the recommended initializer for most
+/// use cases as it focuses on the core camera functionality without the complexity
+/// of resolution-specific configurations.
+/// <h2>Usage Examples</h2>
+/// \code
+/// // Basic configuration with defaults
+/// let config = TruvideoSdkCameraConfiguration()
 ///
-/// returns:
-/// A new <code>TruvideoSdkCameraConfiguration</code> instance.
-+ (TruvideoSdkCameraConfiguration * _Nonnull)instantiateWith:(enum TruvideoSdkCameraLensFacing)lensFacing flashMode:(enum TruvideoSdkCameraFlashMode)flashMode orientation:(enum TruvideoSdkCameraOrientation)orientation outputPath:(NSString * _Nonnull)outputPath frontResolutions:(NSArray<TruvideoSdkCameraResolution *> * _Nonnull)frontResolutions frontResolution:(TruvideoSdkCameraResolution * _Nullable)frontResolution backResolutions:(NSArray<TruvideoSdkCameraResolution *> * _Nonnull)backResolutions backResolution:(TruvideoSdkCameraResolution * _Nullable)backResolution mode:(TruvideoSdkCameraMediaMode * _Nonnull)mode imageFormat:(enum TruvideoSdkCameraImageFormat)imageFormat SWIFT_WARN_UNUSED_RESULT;
+/// // Custom flash and lens settings
+/// let config = TruvideoSdkCameraConfiguration(
+///     flashMode: .auto,
+///     lensFacing: .front
+/// )
+///
+/// // Photo-only mode with specific format
+/// let config = TruvideoSdkCameraConfiguration(
+///     imageFormat: .heic,
+///     mode: .pictureOnly(maxCount: 10)
+/// )
+///
+/// // Video-only mode with custom output path
+/// let config = TruvideoSdkCameraConfiguration(
+///     mode: .videoOnly(maxDuration: 60),
+///     outputPath: "/Documents/Videos"
+/// )
+///
+/// \endcode<h2>Parameter Details</h2>
+/// <ul>
+///   <li>
+///     <em>Flash Mode</em>: Controls camera flash behavior during capture
+///   </li>
+///   <li>
+///     <em>Image Format</em>: Determines the file format for captured photos
+///   </li>
+///   <li>
+///     <em>Lens Facing</em>: Specifies which camera (front or back) to use
+///   </li>
+///   <li>
+///     <em>Media Mode</em>: Defines what can be captured and any limits
+///   </li>
+///   <li>
+///     <em>Output Path</em>: Sets where captured media will be saved
+///   </li>
+/// </ul>
+/// \param flashMode The flash mode setting for photo capture (default: <code>.off</code>)
+///
+/// \param imageFormat The file format for captured images (default: <code>.jpeg</code>)
+///
+/// \param lensFacing The camera lens to use for capture (default: <code>.back</code>)
+///
+/// \param mode The media capture mode and limits (default: <code>.videoAndPicture()</code>)
+///
+/// \param outputPath The directory path for saved media (default: <code>""</code>)
+///
+- (nonnull instancetype)initWithFlashMode:(enum TruvideoSdkCameraFlashMode)flashMode imageFormat:(enum TruvideoSdkCameraImageFormat)imageFormat lensFacing:(enum TruvideoSdkCameraLensFacing)lensFacing mode:(TruvideoSdkCameraMediaMode * _Nonnull)mode outputPath:(NSString * _Nonnull)outputPath OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+@interface TruvideoSdkCameraConfiguration (SWIFT_EXTENSION(TruvideoSdkCamera))
+/// Creates a new camera configuration with all parameters specified.
+/// This factory method provides a comprehensive way to instantiate a camera
+/// configuration with all available settings. It allows fine-grained control
+/// over camera behavior including lens selection, resolution options, flash
+/// settings, image format, capture mode, and output path.
+/// The method accepts both resolution arrays (for available options) and
+/// specific resolution selections (for current settings). This provides
+/// flexibility in how the camera handles resolution selection and fallbacks.
+/// warning:
+/// This method is deprecated. Use the initializer <code>TruvideoSdkCameraConfiguration(...)</code> instead.
+/// \param lensFacing The camera lens to use (front or back)
+///
+/// \param backResolution The specific resolution selected for the back camera (nil = auto-select)
+///
+/// \param backResolutions Available resolution options for the back camera
+///
+/// \param flashMode The flash mode setting for the camera
+///
+/// \param frontResolution The specific resolution selected for the front camera (nil = auto-select)
+///
+/// \param frontResolutions Available resolution options for the front camera
+///
+/// \param imageFormat The image format for captured photos (default: JPEG)
+///
+/// \param mode The media capture mode and limits
+///
+/// \param outputPath The directory path where captured media will be saved
+///
+///
+/// returns:
+/// A fully configured camera configuration instance
++ (TruvideoSdkCameraConfiguration * _Nonnull)instantiateWith:(enum TruvideoSdkCameraLensFacing)lensFacing imageFormat:(enum TruvideoSdkCameraImageFormat)imageFormat mode:(TruvideoSdkCameraMediaMode * _Nonnull)mode outputPath:(NSString * _Nonnull)outputPath SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use TruvideoSdkCameraConfiguration(...) initializer instead");
 @end
 
 
@@ -513,6 +611,7 @@ SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera25TruvideoSdkCameraDelegate_")
 - (TruvideoSdkCameraInformation * _Nonnull)getTruvideoSdkCameraInformation SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class TruvideoSdkCameraResolution;
 
 /// Represents a camera device available on the system.
 /// <code>TruvideoSdkCameraDevice</code> provides details about a specific camera, including its <em>ID, lens direction, supported resolutions, flash availability, and sensor orientation</em>.
@@ -549,51 +648,48 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera23TruvideoSdkCameraDevice")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// Defines the flash mode settings for the camera.
-/// This enum specifies whether the camera <em>flash is enabled or disabled</em>.
-/// <h2>Available Values</h2>
-/// <ul>
-///   <li>
-///     <code>off</code>: <em>Flash is disabled</em>.
-///   </li>
-///   <li>
-///     <code>on</code>: <em>Flash is always enabled</em>.
-///   </li>
-/// </ul>
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraConfig = TruvideoSdkCameraConfiguration(
-///     flashMode: .on
-/// )
-///
-/// \endcode
+/// An enumeration representing the camera flash mode settings.
+/// This enum defines the available flash modes for camera capture, providing
+/// control over whether the camera flash is active during photo or video
+/// capture. It supports both Objective-C integration and JSON serialization
+/// through Codable conformance, making it suitable for configuration storage
+/// and cross-platform communication.
+/// The enum uses string raw values for better readability and API consistency,
+/// with uppercase values following common naming conventions. The flash mode
+/// setting affects the lighting conditions during capture and can significantly
+/// impact image quality in low-light environments.
 typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraFlashMode, open) {
-/// Flash is disabled.
+/// Flash is disabled during capture.
+/// This case represents the flash being turned off, which is useful
+/// for natural lighting conditions or when additional lighting is
+/// not desired. This mode is often preferred for outdoor photography
+/// or when capturing subjects at a distance.
   TruvideoSdkCameraFlashModeOff = 0,
-/// Flash is always enabled.
+/// Flash is enabled during capture.
+/// This case represents the flash being turned on, which provides
+/// additional lighting during capture. This mode is useful for
+/// low-light conditions, indoor photography, or when additional
+/// illumination is needed to properly expose the subject.
   TruvideoSdkCameraFlashModeOn = 1,
 };
 
-/// Defines the output photo’s file format.
-/// This enum specifies whether the photo output file format is <em>png or jpeg</em>.
-/// <h2>Available Values</h2>
-/// <ul>
-///   <li>
-///     <code>png</code>: <em>Output file format is set to png</em>.
-///   </li>
-///   <li>
-///     <code>jpeg</code>: <em>Output file format is set to jpeg</em>.
-///   </li>
-/// </ul>
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraConfig = TruvideoSdkCameraConfiguration(
-///     imageFormat: .png
-/// )
-///
-/// \endcode
+/// An enumeration representing supported image formats for camera capture.
+/// This enum defines the available image formats that can be used for
+/// photo capture in the camera system. It provides a type-safe way to
+/// specify image format preferences and ensures compatibility with
+/// different use cases and quality requirements.
+/// The enum uses string raw values for better readability and API
+/// consistency, with uppercase values following common naming conventions.
+/// Each format has distinct characteristics regarding compression,
+/// quality, file size, and feature support.
 typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraImageFormat, open) {
+/// JPEG image format.
+/// Produces a <em>compressed image</em> with lossy compression,
+/// resulting in smaller file sizes while maintaining reasonable quality.
   TruvideoSdkCameraImageFormatJpeg = 0,
+/// PNG image format.
+/// Produces a <em>lossless compressed image</em> with higher file size
+/// but exact preservation of quality, including transparency.
   TruvideoSdkCameraImageFormatPng = 1,
 };
 
@@ -637,86 +733,210 @@ SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera26TruvideoSdkCameraInterface_")
 - (void)configureTruvideoSdkAppDelegate:(id <TruvideoSdkCameraAppDelegate> _Nonnull)appDelegate;
 @end
 
-/// Defines the camera lens direction used for capturing media.
-/// This enum specifies whether the camera is using the <em>front-facing</em> or <em>back-facing</em> lens.
-/// <h2>Available Values</h2>
-/// <ul>
-///   <li>
-///     <code>back</code>: Uses the <em>rear-facing</em> camera.
-///   </li>
-///   <li>
-///     <code>front</code>: Uses the <em>front-facing</em> camera (selfie mode).
-///   </li>
-/// </ul>
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraConfig = TruvideoSdkCameraConfiguration(
-///     lensFacing: .back,
-///     flashMode: .off,
-///     orientation: .portrait,
-///     outputPath: "video_output.mp4",
-///     frontResolutions: [],
-///     frontResolution: nil,
-///     backResolutions: [],
-///     backResolution: nil,
-///     mode: .videoOnly
-/// )
-///
-/// \endcode
+/// An enumeration representing the camera lens orientation.
+/// This enum defines the two possible camera lens orientations available
+/// on iOS devices. It supports both Objective-C integration and JSON
+/// serialization through Codable conformance, making it suitable for
+/// cross-platform communication and persistent storage.
+/// The enum uses string raw values for better readability and compatibility
+/// with external systems, while maintaining type safety through the
+/// RawRepresentable protocol. The string values are uppercase to follow
+/// common API conventions.
 typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraLensFacing, open) {
-/// Uses the rear-facing camera.
+/// The back-facing camera lens.
+/// This case represents the primary camera lens located on the back
+/// of the device. The back camera typically has higher resolution
+/// and better image quality compared to the front camera, making
+/// it ideal for most photography and video capture scenarios.
   TruvideoSdkCameraLensFacingBack = 0,
-/// Uses the front-facing camera (selfie mode).
+/// The front-facing camera lens.
+/// This case represents the camera lens located on the front of the
+/// device, typically used for selfies and video calls. The front
+/// camera is designed for close-up shots and face detection features.
   TruvideoSdkCameraLensFacingFront = 1,
 };
 
 @class NSUUID;
 enum TruvideoSdkCameraMediaType : NSInteger;
 
-/// A class representing a media file captured by the Truvideo SDK camera.
-/// <code>TruvideoSdkCameraMedia</code> stores details about recorded videos or captured photos,
-/// including their file paths, timestamps, media type, camera lens information, orientation, resolution,
-/// and duration. It conforms to <code>Encodable</code> to allow JSON serialization.
-/// note:
-/// This class is designed to work with Objective-C (<code>@objc</code>) and Swift.
+/// A model representing a captured media item from the camera.
+/// This class encapsulates all the metadata and properties of a captured
+/// media item, including pictures and videos. It provides comprehensive
+/// information about the capture session, including timing, device
+/// orientation, camera settings, and file location.
+/// Each media item includes a unique identifier, creation timestamp,
+/// file path for access, and detailed capture metadata such as
+/// camera lens, orientation, resolution, and media type.
 SWIFT_CLASS("_TtC17TruvideoSdkCamera22TruvideoSdkCameraMedia")
 @interface TruvideoSdkCameraMedia : NSObject
-/// The unique identifier of the media.
+/// A unique identifier for the media item.
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
-/// The timestamp when the media was created.
-@property (nonatomic, readonly) double createdAt;
-/// The file path where the media is stored.
+/// The timestamp when the media was captured.
+@property (nonatomic, readonly) NSTimeInterval createdAt;
+/// The duration of the media item in seconds.
+@property (nonatomic, readonly) NSTimeInterval duration;
+/// The file system path where the media is stored.
 @property (nonatomic, readonly, copy) NSString * _Nonnull filePath;
-/// The type of media (e.g., video clip or photo).
-@property (nonatomic, readonly) enum TruvideoSdkCameraMediaType type;
-/// The camera lens facing direction when the media was captured.
+/// The camera lens used to capture the media.
 @property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
-/// The orientation (rotation) of the camera when the media was captured.
+/// The device orientation when the media was captured.
 @property (nonatomic, readonly) enum TruvideoSdkCameraOrientation orientation;
 /// The resolution of the captured media.
 @property (nonatomic, readonly, strong) TruvideoSdkCameraResolution * _Nonnull resolution;
-/// The duration of the media in milliseconds.
-/// note:
-/// This is applicable only for video clips.
-@property (nonatomic, readonly) int64_t duration;
+/// The type of media that was captured.
+@property (nonatomic, readonly) enum TruvideoSdkCameraMediaType type;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// A configuration class that defines the media capture limits and constraints for the camera.
+/// This class provides a unified way to configure how many pictures and videos can be captured,
+/// along with duration limits for video recordings. It supports various capture modes including
+/// single media capture, multiple media capture, and mixed media capture scenarios.
+/// The class uses a flexible approach where maxMediaCount represents the total limit across
+/// all media types, while individual limits (maxPictureCount, maxVideoCount) provide specific
+/// constraints for each media type. When both total and specific limits are set, the more
+/// restrictive limit takes precedence.
+/// All factory methods provide sensible defaults and can be used to quickly create common
+/// capture configurations without needing to understand the underlying limit calculations.
+/// <h2>Examples</h2>
+/// \code
+/// // Single picture capture
+/// let singlePictureMode = TruvideoSdkCameraMediaMode.singlePicture()
+///
+/// // Multiple pictures with limit
+/// let pictureMode = TruvideoSdkCameraMediaMode.picture(pictureCount: 5)
+///
+/// // Single video with 30-second limit
+/// let singleVideoMode = TruvideoSdkCameraMediaMode.singleVideo(videoDuration: 30)
+///
+/// // Multiple videos with limits
+/// let videoMode = TruvideoSdkCameraMediaMode.video(videoCount: 3, videoDuration: 60)
+///
+/// // Mixed media with separate limits
+/// let mixedMode = TruvideoSdkCameraMediaMode.videoAndPicture(
+///     videoCount: 2,
+///     pictureCount: 5,
+///     videoDuration: 45
+/// )
+///
+/// // Mixed media with total limit only
+/// let totalLimitMode = TruvideoSdkCameraMediaMode.videoAndPicture(
+///     mediaCount: 10,
+///     videoDuration: 30
+/// )
+///
+/// // Custom configuration
+/// let customMode = TruvideoSdkCameraMediaMode(
+///     maxMediaCount: 15,
+///     maxPictureCount: 8,
+///     maxVideoCount: 7,
+///     maxVideoDuration: 60
+/// )
+///
+/// \endcode
+SWIFT_CLASS("_TtC17TruvideoSdkCamera26TruvideoSdkCameraMediaMode")
+@interface TruvideoSdkCameraMediaMode : NSObject
+/// Creates a mode configured for capturing a single picture.
+/// This mode allows exactly one picture to be captured. Video capture is disabled.
+/// This is useful for simple photo capture scenarios.
+///
+/// returns:
+/// A media mode configured for single picture capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)singlePicture SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class NSNumber;
 
-SWIFT_CLASS("_TtC17TruvideoSdkCamera26TruvideoSdkCameraMediaMode")
-@interface TruvideoSdkCameraMediaMode : NSObject
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithVideoCount:(NSNumber * _Nullable)videoCount pictureCount:(NSNumber * _Nullable)pictureCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSSinglePicture SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoOrPictureWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoWithVideoCount:(NSNumber * _Nullable)videoCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSPictureWithPictureCount:(NSNumber * _Nullable)pictureCount SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithMediaCount:(NSNumber * _Nonnull)mediaCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@interface TruvideoSdkCameraMediaMode (SWIFT_EXTENSION(TruvideoSdkCamera))
+/// Creates a mode configured for capturing both videos and pictures with separate limits.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>videoAndPicture</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>videoAndPicture(videoCount:pictureCount:videoDuration:)</code> instead.
+/// \param videoCount Maximum number of videos (nil = unlimited)
+///
+/// \param pictureCount Maximum number of pictures (nil = unlimited)
+///
+/// \param videoDuration Maximum duration per video in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for mixed media capture with separate limits
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithVideoCount:(NSNumber * _Nullable)videoCount pictureCount:(NSNumber * _Nullable)pictureCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use videoAndPicture(videoCount:pictureCount:videoDuration:) instead");
+/// Creates a mode configured for capturing a single video.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>singleVideo</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>singleVideo(videoDuration:)</code> instead.
+/// \param videoDuration Maximum video duration in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for single video capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use singleVideo(videoDuration:) instead");
+/// Creates a mode configured for capturing a single picture.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>singlePicture</code>
+/// method for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>singlePicture()</code> instead.
+///
+/// returns:
+/// A media mode configured for single picture capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSSinglePicture SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use singlePicture() instead");
+/// Creates a mode configured for capturing either a single video or picture.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>singleVideoOrPicture</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>singleVideoOrPicture(videoDuration:)</code> instead.
+/// \param videoDuration Maximum video duration in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for single video or picture capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoOrPictureWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use singleVideoOrPicture(videoDuration:) instead");
+/// Creates a mode configured for capturing multiple videos.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>video</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>video(videoCount:videoDuration:)</code> instead.
+/// \param videoCount Maximum number of videos (nil = unlimited)
+///
+/// \param videoDuration Maximum duration per video in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for multiple video capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoWithVideoCount:(NSNumber * _Nullable)videoCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use video(videoCount:videoDuration:) instead");
+/// Creates a mode configured for capturing multiple pictures.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>picture</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>picture(pictureCount:)</code> instead.
+/// \param pictureCount Maximum number of pictures (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for picture capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSPictureWithPictureCount:(NSNumber * _Nullable)pictureCount SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use picture(pictureCount:) instead");
+/// Creates a mode configured for capturing both videos and pictures with a total limit.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>videoAndPicture</code>
+/// method with total media count limit but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>videoAndPicture(mediaCount:videoDuration:)</code> instead.
+/// \param mediaCount Maximum total media items (nil = unlimited)
+///
+/// \param videoDuration Maximum duration per video in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for mixed media capture with total limit
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithMediaCount:(NSNumber * _Nullable)mediaCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use videoAndPicture(mediaCount:videoDuration:) instead");
 @end
+
 
 /// An enumeration representing the different media types supported by the Truvideo SDK camera.
 /// <code>TruvideoSdkCameraMediaType</code> conforms to <code>Codable</code> and <code>RawRepresentable</code>, allowing it to be
@@ -728,37 +948,35 @@ typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraMediaType, open) {
   TruvideoSdkCameraMediaTypePhoto = 1,
 };
 
-/// Defines the camera orientation for media capture.
-/// This enum specifies whether the camera operates in <em>portrait or landscape mode</em>.
-/// <h2>Available Values</h2>
-/// <ul>
-///   <li>
-///     <code>portrait</code>: <em>Upright portrait mode</em>.
-///   </li>
-///   <li>
-///     <code>landscapeLeft</code>: <em>Landscape mode with the device rotated left</em>.
-///   </li>
-///   <li>
-///     <code>landscapeRight</code>: <em>Landscape mode with the device rotated right</em>.
-///   </li>
-///   <li>
-///     <code>portraitReverse</code>: <em>Upside-down portrait mode</em>.
-///   </li>
-/// </ul>
-/// <h2>Automatic Orientation Detection</h2>
-/// If no orientation is explicitly set, the system will determine the <em>current device orientation</em>.
-/// \code
-/// let orientation = TruvideoSdkCameraOrientation.currentOrientation
-///
-/// \endcode
+/// An enumeration representing camera orientation states.
+/// This enum defines the four possible camera orientations that correspond
+/// to device orientation states. It provides a bridge between device
+/// orientation detection and camera interface orientation requirements,
+/// supporting both portrait and landscape orientations in all directions.
+/// The enum uses string raw values for better readability and API consistency,
+/// with underscore-separated uppercase values following common naming
+/// conventions. It includes utility properties for converting between
+/// different orientation representations and retrieving current device state.
 typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraOrientation, open) {
 /// Upright portrait mode.
+/// This case represents the standard portrait orientation where the device
+/// is held vertically with the top of the device pointing upward. This is
+/// the most common orientation for mobile photography and video capture.
   TruvideoSdkCameraOrientationPortrait = 0,
 /// Landscape mode with the device rotated left.
+/// This case represents landscape orientation where the device is rotated
+/// 90 degrees counterclockwise from portrait. The left edge of the device
+/// becomes the top edge in this orientation.
   TruvideoSdkCameraOrientationLandscapeLeft = 1,
 /// Landscape mode with the device rotated right.
+/// This case represents landscape orientation where the device is rotated
+/// 90 degrees clockwise from portrait. The right edge of the device
+/// becomes the top edge in this orientation.
   TruvideoSdkCameraOrientationLandscapeRight = 2,
 /// Upside-down portrait mode.
+/// This case represents portrait orientation where the device is rotated
+/// 180 degrees from the standard portrait position. The bottom of the
+/// device becomes the top in this orientation.
   TruvideoSdkCameraOrientationPortraitReverse = 3,
 };
 
@@ -781,19 +999,95 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <Truvideo
 @end
 
 
+/// Represents a camera resolution with width and height dimensions.
+/// <code>TruvideoSdkCameraResolution</code> defines a camera resolution using integer width and height values.
+/// This class provides a simple way to represent video capture resolutions and supports
+/// JSON encoding for configuration storage and API communication.
+/// <h2>Usage</h2>
+/// \code
+/// // Create a 1920x1080 resolution
+/// let fullHD = TruvideoSdkCameraResolution(width: 1920, height: 1080)
+///
+/// // Create a 1280x720 resolution
+/// let hd = TruvideoSdkCameraResolution(width: 1280, height: 720)
+///
+/// // Access resolution dimensions
+/// print("Width: \(fullHD.width), Height: \(fullHD.height)")
+///
+/// \endcode<h2>Common Resolutions</h2>
+/// Standard video resolutions include:
+/// <ul>
+///   <li>
+///     <em>4K</em>: 3840×2160 (Ultra High Definition)
+///   </li>
+///   <li>
+///     <em>1080p</em>: 1920×1080 (Full High Definition)
+///   </li>
+///   <li>
+///     <em>720p</em>: 1280×720 (High Definition)
+///   </li>
+///   <li>
+///     <em>480p</em>: 854×480 (Standard Definition)
+///   </li>
+///   <li>
+///     <em>360p</em>: 640×360 (Low Definition)
+///   </li>
+/// </ul>
+/// <h2>JSON Encoding</h2>
+/// The class supports JSON encoding for API communication:
+/// \code
+/// let resolution = TruvideoSdkCameraResolution(width: 1920, height: 1080)
+/// let encoder = JSONEncoder()
+/// let data = try encoder.encode(resolution)
+/// // Result: {"width": 1920, "height": 1080}
+///
+/// \endcode<h2>Objective-C Compatibility</h2>
+/// The class is marked with <code>@objcMembers</code> for full Objective-C interoperability,
+/// allowing seamless integration with existing Objective-C codebases.
+/// <h2>Thread Safety</h2>
+/// This class is thread-safe and can be used concurrently across multiple threads.
+/// All properties are immutable once initialized.
+/// note:
+/// This class is deprecated. Use <code>AVCaptureSession.Preset</code> for resolution handling.
+/// important:
+/// Width and height values are stored as <code>Int32</code> for API compatibility.
 SWIFT_CLASS("_TtC17TruvideoSdkCamera27TruvideoSdkCameraResolution")
 @interface TruvideoSdkCameraResolution : NSObject
-@property (nonatomic, readonly) int32_t width;
+/// The height of the camera resolution in pixels.
+/// This property represents the vertical dimension of the video capture resolution.
+/// It’s stored as an <code>Int32</code> for API compatibility and JSON encoding support.
 @property (nonatomic, readonly) int32_t height;
+/// The width of the camera resolution in pixels.
+/// This property represents the horizontal dimension of the video capture resolution.
+/// It’s stored as an <code>Int32</code> for API compatibility and JSON encoding support.
+@property (nonatomic, readonly) int32_t width;
+/// Creates a new camera resolution with the specified width and height.
+/// This initializer creates a resolution object with the given dimensions.
+/// Both width and height must be positive values representing pixel dimensions.
+/// \param width The horizontal dimension in pixels
+///
+/// \param height The vertical dimension in pixels
+///
+- (nonnull instancetype)initWithWidth:(int32_t)width height:(int32_t)height OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-/// A result of the recording session.
+/// A result object containing the media items captured by the camera.
+/// This class represents the outcome of a camera capture session, containing
+/// all the media items (pictures and videos) that were successfully captured.
+/// The result is designed to be easily serializable and can be encoded for
+/// storage or transmission purposes.
+/// The media array contains all captured items in the order they were captured,
+/// allowing for chronological playback or processing. Each media item includes
+/// its type, file path, metadata, and any associated properties.
 SWIFT_CLASS("_TtC17TruvideoSdkCamera23TruvideoSdkCameraResult")
 @interface TruvideoSdkCameraResult : NSObject
-/// The media recorded during the session.
+/// The collection of media items captured during the camera session.
+/// This array contains all successfully captured pictures and videos,
+/// ordered chronologically by capture time. Each media item includes
+/// the file path, type information, and associated metadata.
 @property (nonatomic, readonly, copy) NSArray<TruvideoSdkCameraMedia *> * _Nonnull media;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -911,13 +1205,26 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera37TruvideoSdkScannerCameraConfiguration")
 
 
 
+
+
+
 @interface UIViewController (SWIFT_EXTENSION(TruvideoSdkCamera))
-/// Presents the Standard Camera view in full-screen mode.
-/// This method displays the <em>TruvideoSdkCamera</em>, allowing users to <em>capture photos and record videos</em> based on the provided
-/// camera configuration.
-/// \param preset A <code>TruvideoSdkCameraConfiguration</code> object that defines the configuration for the camera.
+/// Presents a full-screen camera interface for media capture.
+/// This function creates and presents a camera view that allows users to capture
+/// pictures and videos according to the specified configuration. The camera
+/// interface is displayed as a full-screen modal that covers the entire screen
+/// and provides a native camera experience with capture controls.
+/// The function uses UIKit’s presentation system to show a SwiftUI camera view
+/// wrapped in a UIHostingController. The camera view is presented modally with
+/// full-screen presentation style, ensuring it takes over the entire display
+/// area for an immersive camera experience.
+/// The camera configuration can be customized to control capture limits,
+/// video duration, media types, and other camera behavior settings. When the
+/// user completes their capture session, the onComplete closure is called
+/// with the captured media results.
+/// \param preset Configuration settings for the camera behavior (default: default configuration)
 ///
-/// \param onComplete A callback function that receives a <code>TruvideoSdkCameraResult</code> containing captured media.
+/// \param onComplete Closure called when the camera session completes with captured media
 ///
 - (void)presentTruvideoSdkCameraViewWithPreset:(TruvideoSdkCameraConfiguration * _Nonnull)preset onComplete:(void (^ _Nonnull)(TruvideoSdkCameraResult * _Nonnull))onComplete;
 @end
@@ -931,17 +1238,6 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera37TruvideoSdkScannerCameraConfiguration")
 /// \param onComplete A callback function that receives a <code>TruvideoSdkCameraResult</code> containing captured media.
 ///
 - (void)presentTruvideoSdkARCameraViewWithPreset:(TruvideoSdkARCameraConfiguration * _Nonnull)preset onComplete:(void (^ _Nonnull)(TruvideoSdkCameraResult * _Nonnull))onComplete;
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(TruvideoSdkCamera))
-/// Presents the Scanner Camera view in full-screen mode.
-/// This method displays the <em>TruvideoSdkScannerCamera</em>, allowing users to scan barcodes and QR codes.
-/// \param preset A <code>TruvideoSdkCameraConfiguration</code> object that defines the configuration for the camera.
-///
-/// \param onComplete A callback function that receives a <code>TruvideoSdkCameraScannerCode</code> containing the scanned barcode data.
-///
-- (void)presentTruvideoSdkScannerCameraViewWithPreset:(TruvideoSdkScannerCameraConfiguration * _Nonnull)preset onComplete:(void (^ _Nonnull)(TruvideoSdkCameraScannerCode * _Nullable))onComplete;
 @end
 
 #endif
@@ -1273,6 +1569,31 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// A registry for the TruVideo SDK Camera library that provides library metadata and configuration.
+SWIFT_CLASS("_TtC17TruvideoSdkCamera16SDKCameraLibrary")
+@interface SDKCameraLibrary : NSObject
+/// Registers the camera library with the SDK’s library registry.
+/// This static method registers the camera library instance with the global
+/// library registry system. It should be called during SDK initialization
+/// to ensure the camera library is properly registered and available for
+/// dependency injection and service discovery.
++ (void)register;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 enum TruvideoSdkCameraFlashMode : NSInteger;
 @class TruvideoSdkCameraMediaMode;
 enum TruvideoSdkCameraOrientation : NSInteger;
@@ -1373,78 +1694,151 @@ SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera28TruvideoSdkCameraAppDelegate_")
 - (UIInterfaceOrientationMask)application:(UIApplication * _Nonnull)application supportedInterfaceOrientationsForWindow:(UIWindow * _Nullable)window SWIFT_WARN_UNUSED_RESULT;
 @end
 
+enum TruvideoSdkCameraImageFormat : NSInteger;
 enum TruvideoSdkCameraLensFacing : NSInteger;
 @class NSString;
-enum TruvideoSdkCameraImageFormat : NSInteger;
-@class TruvideoSdkCameraResolution;
 
-/// A configuration object for setting up the camera in <code>TruvideoSdkCamera</code>.
-/// <code>TruvideoSdkCameraConfiguration</code> allows developers to customize the camera’s behavior, including <em>lens selection, flash settings, orientation, resolution management, and media output</em>.
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraConfig = TruvideoSdkCameraConfiguration(
-///     lensFacing: .back,
-///     flashMode: .auto,
-///     orientation: .portrait,
-///     outputPath: "media_output.mp4",
-///     frontResolutions: [],
-///     frontResolution: nil,
-///     backResolutions: [],
-///     backResolution: nil,
-///     mode: .videoOnly
-/// )
-///
-/// \endcodeThis configuration can be passed to <code>presentTruvideoSdkCameraView</code> to launch the camera with the specified settings.
-/// note:
-/// If no orientation is provided, the default device orientation will be used.
-/// <h2>See Also</h2>
-/// <ul>
-///   <li>
-///     <code>TruvideoSdkCameraLensFacing</code>
-///   </li>
-///   <li>
-///     <code>TruvideoSdkCameraFlashMode</code>
-///   </li>
-///   <li>
-///     <code>TruvideoSdkCameraOrientation</code>
-///   </li>
-/// </ul>
+/// A configuration object that defines camera behavior and capture settings.
+/// This class encapsulates all the settings needed to configure the camera
+/// for media capture, including lens selection, flash behavior, image format,
+/// resolution options, and capture mode limits. It provides a centralized
+/// way to manage camera configuration and ensures consistent behavior
+/// across different capture sessions.
+/// The configuration supports both front and back camera lenses, multiple
+/// resolution options, various flash modes, and flexible media capture
+/// modes. All settings have sensible defaults to simplify common use cases
+/// while still allowing fine-grained customization when needed.
+/// This class is designed to be Objective-C compatible and can be easily
+/// integrated into existing iOS applications.
 SWIFT_CLASS("_TtC17TruvideoSdkCamera30TruvideoSdkCameraConfiguration")
 @interface TruvideoSdkCameraConfiguration : NSObject
-/// The selected camera lens facing mode.
-/// Determines whether the <em>front</em> or <em>rear</em> camera is used for media capture.
-@property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
 /// The flash mode setting for the camera.
-/// Determines whether the <em>flash is enabled or disabled</em> during capture.
+/// This property determines how the camera flash behaves during capture.
+/// Options include off, on, auto, and other flash modes depending on
+/// device capabilities and lighting conditions.
 @property (nonatomic, readonly) enum TruvideoSdkCameraFlashMode flashMode;
-/// The camera orientation used when capturing media.
-/// Specifies whether the camera operates in <em>portrait or landscape mode</em>.
-@property (nonatomic, readonly) enum TruvideoSdkCameraOrientation orientation;
-/// The output file path where the recorded media will be saved.
-/// Defines the storage location of the <em>captured photos or recorded videos</em>.
-@property (nonatomic, readonly, copy) NSString * _Nonnull outputPath;
-/// Defines the camera’s capture mode.
-/// Determines whether the camera captures <em>photos, videos, or both</em>.
+/// The image format for captured photos.
+/// This property specifies the file format used for saving captured
+/// images. Common formats include JPEG, PNG, and HEIC. The format
+/// affects file size, quality, and compatibility with different systems.
+@property (nonatomic, readonly) enum TruvideoSdkCameraImageFormat imageFormat;
+/// Indicates whether high-resolution photo capture is enabled.
+/// When enabled, the camera will capture photos at the highest
+/// available resolution for the selected camera lens. This may
+/// impact performance and file size but provides maximum image quality.
+@property (nonatomic, readonly) BOOL isHighResolutionPhotoEnabled;
+/// The camera lens to use for capture.
+/// This property specifies whether to use the front-facing or
+/// back-facing camera lens. The choice affects the perspective
+/// and capabilities available during capture.
+@property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
+/// The media capture mode and limits.
+/// This property defines what types of media can be captured
+/// (pictures, videos, or both) and sets limits on the number
+/// of items and duration for each media type.
 @property (nonatomic, readonly, strong) TruvideoSdkCameraMediaMode * _Nonnull mode;
-/// Defines the camera’s capture mode.
-/// Determines whether the camera captures <em>photos, videos, or both</em>.
-@property (nonatomic) BOOL isHighResolutionPhotoEnabled;
-/// Defines the camera’s UI
-/// Determines whether the camera will be presented with the new or legacy UI design
-@property (nonatomic) BOOL isNewLayoutEnabled;
-/// Defines the camera’s photo output file format
-/// Determines wether the output file format is <em>png or jpeg</em>
-@property (nonatomic) enum TruvideoSdkCameraImageFormat imageFormat;
-/// Defines behavior when moving to background
-/// Pauses the the recording when moving to background and concatenate them at the end using FFMPEG
-@property (nonatomic) BOOL pauseVideoWhenMovingToBackground;
-/// Instantiates a new <code>TruvideoSdkCameraConfiguration</code> using static method syntax.
+/// The directory path where captured media will be saved.
+/// This property specifies the file system location where
+/// captured pictures and videos will be stored. The path
+/// should be writable and accessible by the application.
+@property (nonatomic, readonly, copy) NSString * _Nonnull outputPath;
+/// Creates a new camera configuration with essential settings.
+/// This initializer provides a simplified way to configure the camera with the most
+/// commonly used settings. It offers sensible defaults for all parameters while still
+/// allowing customization when needed. This is the recommended initializer for most
+/// use cases as it focuses on the core camera functionality without the complexity
+/// of resolution-specific configurations.
+/// <h2>Usage Examples</h2>
+/// \code
+/// // Basic configuration with defaults
+/// let config = TruvideoSdkCameraConfiguration()
 ///
-/// returns:
-/// A new <code>TruvideoSdkCameraConfiguration</code> instance.
-+ (TruvideoSdkCameraConfiguration * _Nonnull)instantiateWith:(enum TruvideoSdkCameraLensFacing)lensFacing flashMode:(enum TruvideoSdkCameraFlashMode)flashMode orientation:(enum TruvideoSdkCameraOrientation)orientation outputPath:(NSString * _Nonnull)outputPath frontResolutions:(NSArray<TruvideoSdkCameraResolution *> * _Nonnull)frontResolutions frontResolution:(TruvideoSdkCameraResolution * _Nullable)frontResolution backResolutions:(NSArray<TruvideoSdkCameraResolution *> * _Nonnull)backResolutions backResolution:(TruvideoSdkCameraResolution * _Nullable)backResolution mode:(TruvideoSdkCameraMediaMode * _Nonnull)mode imageFormat:(enum TruvideoSdkCameraImageFormat)imageFormat SWIFT_WARN_UNUSED_RESULT;
+/// // Custom flash and lens settings
+/// let config = TruvideoSdkCameraConfiguration(
+///     flashMode: .auto,
+///     lensFacing: .front
+/// )
+///
+/// // Photo-only mode with specific format
+/// let config = TruvideoSdkCameraConfiguration(
+///     imageFormat: .heic,
+///     mode: .pictureOnly(maxCount: 10)
+/// )
+///
+/// // Video-only mode with custom output path
+/// let config = TruvideoSdkCameraConfiguration(
+///     mode: .videoOnly(maxDuration: 60),
+///     outputPath: "/Documents/Videos"
+/// )
+///
+/// \endcode<h2>Parameter Details</h2>
+/// <ul>
+///   <li>
+///     <em>Flash Mode</em>: Controls camera flash behavior during capture
+///   </li>
+///   <li>
+///     <em>Image Format</em>: Determines the file format for captured photos
+///   </li>
+///   <li>
+///     <em>Lens Facing</em>: Specifies which camera (front or back) to use
+///   </li>
+///   <li>
+///     <em>Media Mode</em>: Defines what can be captured and any limits
+///   </li>
+///   <li>
+///     <em>Output Path</em>: Sets where captured media will be saved
+///   </li>
+/// </ul>
+/// \param flashMode The flash mode setting for photo capture (default: <code>.off</code>)
+///
+/// \param imageFormat The file format for captured images (default: <code>.jpeg</code>)
+///
+/// \param lensFacing The camera lens to use for capture (default: <code>.back</code>)
+///
+/// \param mode The media capture mode and limits (default: <code>.videoAndPicture()</code>)
+///
+/// \param outputPath The directory path for saved media (default: <code>""</code>)
+///
+- (nonnull instancetype)initWithFlashMode:(enum TruvideoSdkCameraFlashMode)flashMode imageFormat:(enum TruvideoSdkCameraImageFormat)imageFormat lensFacing:(enum TruvideoSdkCameraLensFacing)lensFacing mode:(TruvideoSdkCameraMediaMode * _Nonnull)mode outputPath:(NSString * _Nonnull)outputPath OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+@interface TruvideoSdkCameraConfiguration (SWIFT_EXTENSION(TruvideoSdkCamera))
+/// Creates a new camera configuration with all parameters specified.
+/// This factory method provides a comprehensive way to instantiate a camera
+/// configuration with all available settings. It allows fine-grained control
+/// over camera behavior including lens selection, resolution options, flash
+/// settings, image format, capture mode, and output path.
+/// The method accepts both resolution arrays (for available options) and
+/// specific resolution selections (for current settings). This provides
+/// flexibility in how the camera handles resolution selection and fallbacks.
+/// warning:
+/// This method is deprecated. Use the initializer <code>TruvideoSdkCameraConfiguration(...)</code> instead.
+/// \param lensFacing The camera lens to use (front or back)
+///
+/// \param backResolution The specific resolution selected for the back camera (nil = auto-select)
+///
+/// \param backResolutions Available resolution options for the back camera
+///
+/// \param flashMode The flash mode setting for the camera
+///
+/// \param frontResolution The specific resolution selected for the front camera (nil = auto-select)
+///
+/// \param frontResolutions Available resolution options for the front camera
+///
+/// \param imageFormat The image format for captured photos (default: JPEG)
+///
+/// \param mode The media capture mode and limits
+///
+/// \param outputPath The directory path where captured media will be saved
+///
+///
+/// returns:
+/// A fully configured camera configuration instance
++ (TruvideoSdkCameraConfiguration * _Nonnull)instantiateWith:(enum TruvideoSdkCameraLensFacing)lensFacing imageFormat:(enum TruvideoSdkCameraImageFormat)imageFormat mode:(TruvideoSdkCameraMediaMode * _Nonnull)mode outputPath:(NSString * _Nonnull)outputPath SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use TruvideoSdkCameraConfiguration(...) initializer instead");
 @end
 
 
@@ -1467,6 +1861,7 @@ SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera25TruvideoSdkCameraDelegate_")
 - (TruvideoSdkCameraInformation * _Nonnull)getTruvideoSdkCameraInformation SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class TruvideoSdkCameraResolution;
 
 /// Represents a camera device available on the system.
 /// <code>TruvideoSdkCameraDevice</code> provides details about a specific camera, including its <em>ID, lens direction, supported resolutions, flash availability, and sensor orientation</em>.
@@ -1503,51 +1898,48 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera23TruvideoSdkCameraDevice")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// Defines the flash mode settings for the camera.
-/// This enum specifies whether the camera <em>flash is enabled or disabled</em>.
-/// <h2>Available Values</h2>
-/// <ul>
-///   <li>
-///     <code>off</code>: <em>Flash is disabled</em>.
-///   </li>
-///   <li>
-///     <code>on</code>: <em>Flash is always enabled</em>.
-///   </li>
-/// </ul>
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraConfig = TruvideoSdkCameraConfiguration(
-///     flashMode: .on
-/// )
-///
-/// \endcode
+/// An enumeration representing the camera flash mode settings.
+/// This enum defines the available flash modes for camera capture, providing
+/// control over whether the camera flash is active during photo or video
+/// capture. It supports both Objective-C integration and JSON serialization
+/// through Codable conformance, making it suitable for configuration storage
+/// and cross-platform communication.
+/// The enum uses string raw values for better readability and API consistency,
+/// with uppercase values following common naming conventions. The flash mode
+/// setting affects the lighting conditions during capture and can significantly
+/// impact image quality in low-light environments.
 typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraFlashMode, open) {
-/// Flash is disabled.
+/// Flash is disabled during capture.
+/// This case represents the flash being turned off, which is useful
+/// for natural lighting conditions or when additional lighting is
+/// not desired. This mode is often preferred for outdoor photography
+/// or when capturing subjects at a distance.
   TruvideoSdkCameraFlashModeOff = 0,
-/// Flash is always enabled.
+/// Flash is enabled during capture.
+/// This case represents the flash being turned on, which provides
+/// additional lighting during capture. This mode is useful for
+/// low-light conditions, indoor photography, or when additional
+/// illumination is needed to properly expose the subject.
   TruvideoSdkCameraFlashModeOn = 1,
 };
 
-/// Defines the output photo’s file format.
-/// This enum specifies whether the photo output file format is <em>png or jpeg</em>.
-/// <h2>Available Values</h2>
-/// <ul>
-///   <li>
-///     <code>png</code>: <em>Output file format is set to png</em>.
-///   </li>
-///   <li>
-///     <code>jpeg</code>: <em>Output file format is set to jpeg</em>.
-///   </li>
-/// </ul>
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraConfig = TruvideoSdkCameraConfiguration(
-///     imageFormat: .png
-/// )
-///
-/// \endcode
+/// An enumeration representing supported image formats for camera capture.
+/// This enum defines the available image formats that can be used for
+/// photo capture in the camera system. It provides a type-safe way to
+/// specify image format preferences and ensures compatibility with
+/// different use cases and quality requirements.
+/// The enum uses string raw values for better readability and API
+/// consistency, with uppercase values following common naming conventions.
+/// Each format has distinct characteristics regarding compression,
+/// quality, file size, and feature support.
 typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraImageFormat, open) {
+/// JPEG image format.
+/// Produces a <em>compressed image</em> with lossy compression,
+/// resulting in smaller file sizes while maintaining reasonable quality.
   TruvideoSdkCameraImageFormatJpeg = 0,
+/// PNG image format.
+/// Produces a <em>lossless compressed image</em> with higher file size
+/// but exact preservation of quality, including transparency.
   TruvideoSdkCameraImageFormatPng = 1,
 };
 
@@ -1591,86 +1983,210 @@ SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera26TruvideoSdkCameraInterface_")
 - (void)configureTruvideoSdkAppDelegate:(id <TruvideoSdkCameraAppDelegate> _Nonnull)appDelegate;
 @end
 
-/// Defines the camera lens direction used for capturing media.
-/// This enum specifies whether the camera is using the <em>front-facing</em> or <em>back-facing</em> lens.
-/// <h2>Available Values</h2>
-/// <ul>
-///   <li>
-///     <code>back</code>: Uses the <em>rear-facing</em> camera.
-///   </li>
-///   <li>
-///     <code>front</code>: Uses the <em>front-facing</em> camera (selfie mode).
-///   </li>
-/// </ul>
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraConfig = TruvideoSdkCameraConfiguration(
-///     lensFacing: .back,
-///     flashMode: .off,
-///     orientation: .portrait,
-///     outputPath: "video_output.mp4",
-///     frontResolutions: [],
-///     frontResolution: nil,
-///     backResolutions: [],
-///     backResolution: nil,
-///     mode: .videoOnly
-/// )
-///
-/// \endcode
+/// An enumeration representing the camera lens orientation.
+/// This enum defines the two possible camera lens orientations available
+/// on iOS devices. It supports both Objective-C integration and JSON
+/// serialization through Codable conformance, making it suitable for
+/// cross-platform communication and persistent storage.
+/// The enum uses string raw values for better readability and compatibility
+/// with external systems, while maintaining type safety through the
+/// RawRepresentable protocol. The string values are uppercase to follow
+/// common API conventions.
 typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraLensFacing, open) {
-/// Uses the rear-facing camera.
+/// The back-facing camera lens.
+/// This case represents the primary camera lens located on the back
+/// of the device. The back camera typically has higher resolution
+/// and better image quality compared to the front camera, making
+/// it ideal for most photography and video capture scenarios.
   TruvideoSdkCameraLensFacingBack = 0,
-/// Uses the front-facing camera (selfie mode).
+/// The front-facing camera lens.
+/// This case represents the camera lens located on the front of the
+/// device, typically used for selfies and video calls. The front
+/// camera is designed for close-up shots and face detection features.
   TruvideoSdkCameraLensFacingFront = 1,
 };
 
 @class NSUUID;
 enum TruvideoSdkCameraMediaType : NSInteger;
 
-/// A class representing a media file captured by the Truvideo SDK camera.
-/// <code>TruvideoSdkCameraMedia</code> stores details about recorded videos or captured photos,
-/// including their file paths, timestamps, media type, camera lens information, orientation, resolution,
-/// and duration. It conforms to <code>Encodable</code> to allow JSON serialization.
-/// note:
-/// This class is designed to work with Objective-C (<code>@objc</code>) and Swift.
+/// A model representing a captured media item from the camera.
+/// This class encapsulates all the metadata and properties of a captured
+/// media item, including pictures and videos. It provides comprehensive
+/// information about the capture session, including timing, device
+/// orientation, camera settings, and file location.
+/// Each media item includes a unique identifier, creation timestamp,
+/// file path for access, and detailed capture metadata such as
+/// camera lens, orientation, resolution, and media type.
 SWIFT_CLASS("_TtC17TruvideoSdkCamera22TruvideoSdkCameraMedia")
 @interface TruvideoSdkCameraMedia : NSObject
-/// The unique identifier of the media.
+/// A unique identifier for the media item.
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
-/// The timestamp when the media was created.
-@property (nonatomic, readonly) double createdAt;
-/// The file path where the media is stored.
+/// The timestamp when the media was captured.
+@property (nonatomic, readonly) NSTimeInterval createdAt;
+/// The duration of the media item in seconds.
+@property (nonatomic, readonly) NSTimeInterval duration;
+/// The file system path where the media is stored.
 @property (nonatomic, readonly, copy) NSString * _Nonnull filePath;
-/// The type of media (e.g., video clip or photo).
-@property (nonatomic, readonly) enum TruvideoSdkCameraMediaType type;
-/// The camera lens facing direction when the media was captured.
+/// The camera lens used to capture the media.
 @property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
-/// The orientation (rotation) of the camera when the media was captured.
+/// The device orientation when the media was captured.
 @property (nonatomic, readonly) enum TruvideoSdkCameraOrientation orientation;
 /// The resolution of the captured media.
 @property (nonatomic, readonly, strong) TruvideoSdkCameraResolution * _Nonnull resolution;
-/// The duration of the media in milliseconds.
-/// note:
-/// This is applicable only for video clips.
-@property (nonatomic, readonly) int64_t duration;
+/// The type of media that was captured.
+@property (nonatomic, readonly) enum TruvideoSdkCameraMediaType type;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// A configuration class that defines the media capture limits and constraints for the camera.
+/// This class provides a unified way to configure how many pictures and videos can be captured,
+/// along with duration limits for video recordings. It supports various capture modes including
+/// single media capture, multiple media capture, and mixed media capture scenarios.
+/// The class uses a flexible approach where maxMediaCount represents the total limit across
+/// all media types, while individual limits (maxPictureCount, maxVideoCount) provide specific
+/// constraints for each media type. When both total and specific limits are set, the more
+/// restrictive limit takes precedence.
+/// All factory methods provide sensible defaults and can be used to quickly create common
+/// capture configurations without needing to understand the underlying limit calculations.
+/// <h2>Examples</h2>
+/// \code
+/// // Single picture capture
+/// let singlePictureMode = TruvideoSdkCameraMediaMode.singlePicture()
+///
+/// // Multiple pictures with limit
+/// let pictureMode = TruvideoSdkCameraMediaMode.picture(pictureCount: 5)
+///
+/// // Single video with 30-second limit
+/// let singleVideoMode = TruvideoSdkCameraMediaMode.singleVideo(videoDuration: 30)
+///
+/// // Multiple videos with limits
+/// let videoMode = TruvideoSdkCameraMediaMode.video(videoCount: 3, videoDuration: 60)
+///
+/// // Mixed media with separate limits
+/// let mixedMode = TruvideoSdkCameraMediaMode.videoAndPicture(
+///     videoCount: 2,
+///     pictureCount: 5,
+///     videoDuration: 45
+/// )
+///
+/// // Mixed media with total limit only
+/// let totalLimitMode = TruvideoSdkCameraMediaMode.videoAndPicture(
+///     mediaCount: 10,
+///     videoDuration: 30
+/// )
+///
+/// // Custom configuration
+/// let customMode = TruvideoSdkCameraMediaMode(
+///     maxMediaCount: 15,
+///     maxPictureCount: 8,
+///     maxVideoCount: 7,
+///     maxVideoDuration: 60
+/// )
+///
+/// \endcode
+SWIFT_CLASS("_TtC17TruvideoSdkCamera26TruvideoSdkCameraMediaMode")
+@interface TruvideoSdkCameraMediaMode : NSObject
+/// Creates a mode configured for capturing a single picture.
+/// This mode allows exactly one picture to be captured. Video capture is disabled.
+/// This is useful for simple photo capture scenarios.
+///
+/// returns:
+/// A media mode configured for single picture capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)singlePicture SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class NSNumber;
 
-SWIFT_CLASS("_TtC17TruvideoSdkCamera26TruvideoSdkCameraMediaMode")
-@interface TruvideoSdkCameraMediaMode : NSObject
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithVideoCount:(NSNumber * _Nullable)videoCount pictureCount:(NSNumber * _Nullable)pictureCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSSinglePicture SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoOrPictureWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoWithVideoCount:(NSNumber * _Nullable)videoCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSPictureWithPictureCount:(NSNumber * _Nullable)pictureCount SWIFT_WARN_UNUSED_RESULT;
-+ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithMediaCount:(NSNumber * _Nonnull)mediaCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@interface TruvideoSdkCameraMediaMode (SWIFT_EXTENSION(TruvideoSdkCamera))
+/// Creates a mode configured for capturing both videos and pictures with separate limits.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>videoAndPicture</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>videoAndPicture(videoCount:pictureCount:videoDuration:)</code> instead.
+/// \param videoCount Maximum number of videos (nil = unlimited)
+///
+/// \param pictureCount Maximum number of pictures (nil = unlimited)
+///
+/// \param videoDuration Maximum duration per video in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for mixed media capture with separate limits
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithVideoCount:(NSNumber * _Nullable)videoCount pictureCount:(NSNumber * _Nullable)pictureCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use videoAndPicture(videoCount:pictureCount:videoDuration:) instead");
+/// Creates a mode configured for capturing a single video.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>singleVideo</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>singleVideo(videoDuration:)</code> instead.
+/// \param videoDuration Maximum video duration in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for single video capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use singleVideo(videoDuration:) instead");
+/// Creates a mode configured for capturing a single picture.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>singlePicture</code>
+/// method for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>singlePicture()</code> instead.
+///
+/// returns:
+/// A media mode configured for single picture capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSSinglePicture SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use singlePicture() instead");
+/// Creates a mode configured for capturing either a single video or picture.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>singleVideoOrPicture</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>singleVideoOrPicture(videoDuration:)</code> instead.
+/// \param videoDuration Maximum video duration in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for single video or picture capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSSingleVideoOrPictureWithVideoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use singleVideoOrPicture(videoDuration:) instead");
+/// Creates a mode configured for capturing multiple videos.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>video</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>video(videoCount:videoDuration:)</code> instead.
+/// \param videoCount Maximum number of videos (nil = unlimited)
+///
+/// \param videoDuration Maximum duration per video in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for multiple video capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoWithVideoCount:(NSNumber * _Nullable)videoCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use video(videoCount:videoDuration:) instead");
+/// Creates a mode configured for capturing multiple pictures.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>picture</code>
+/// method but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>picture(pictureCount:)</code> instead.
+/// \param pictureCount Maximum number of pictures (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for picture capture
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSPictureWithPictureCount:(NSNumber * _Nullable)pictureCount SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use picture(pictureCount:) instead");
+/// Creates a mode configured for capturing both videos and pictures with a total limit.
+/// This Objective-C wrapper method provides the same functionality as the Swift <code>videoAndPicture</code>
+/// method with total media count limit but accepts NSNumber parameters for better Objective-C compatibility.
+/// warning:
+/// This method is deprecated. Use <code>videoAndPicture(mediaCount:videoDuration:)</code> instead.
+/// \param mediaCount Maximum total media items (nil = unlimited)
+///
+/// \param videoDuration Maximum duration per video in seconds (nil = unlimited)
+///
+///
+/// returns:
+/// A media mode configured for mixed media capture with total limit
++ (TruvideoSdkCameraMediaMode * _Nonnull)NSVideoAndPictureWithMediaCount:(NSNumber * _Nullable)mediaCount videoDuration:(NSNumber * _Nullable)videoDuration SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use videoAndPicture(mediaCount:videoDuration:) instead");
 @end
+
 
 /// An enumeration representing the different media types supported by the Truvideo SDK camera.
 /// <code>TruvideoSdkCameraMediaType</code> conforms to <code>Codable</code> and <code>RawRepresentable</code>, allowing it to be
@@ -1682,37 +2198,35 @@ typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraMediaType, open) {
   TruvideoSdkCameraMediaTypePhoto = 1,
 };
 
-/// Defines the camera orientation for media capture.
-/// This enum specifies whether the camera operates in <em>portrait or landscape mode</em>.
-/// <h2>Available Values</h2>
-/// <ul>
-///   <li>
-///     <code>portrait</code>: <em>Upright portrait mode</em>.
-///   </li>
-///   <li>
-///     <code>landscapeLeft</code>: <em>Landscape mode with the device rotated left</em>.
-///   </li>
-///   <li>
-///     <code>landscapeRight</code>: <em>Landscape mode with the device rotated right</em>.
-///   </li>
-///   <li>
-///     <code>portraitReverse</code>: <em>Upside-down portrait mode</em>.
-///   </li>
-/// </ul>
-/// <h2>Automatic Orientation Detection</h2>
-/// If no orientation is explicitly set, the system will determine the <em>current device orientation</em>.
-/// \code
-/// let orientation = TruvideoSdkCameraOrientation.currentOrientation
-///
-/// \endcode
+/// An enumeration representing camera orientation states.
+/// This enum defines the four possible camera orientations that correspond
+/// to device orientation states. It provides a bridge between device
+/// orientation detection and camera interface orientation requirements,
+/// supporting both portrait and landscape orientations in all directions.
+/// The enum uses string raw values for better readability and API consistency,
+/// with underscore-separated uppercase values following common naming
+/// conventions. It includes utility properties for converting between
+/// different orientation representations and retrieving current device state.
 typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraOrientation, open) {
 /// Upright portrait mode.
+/// This case represents the standard portrait orientation where the device
+/// is held vertically with the top of the device pointing upward. This is
+/// the most common orientation for mobile photography and video capture.
   TruvideoSdkCameraOrientationPortrait = 0,
 /// Landscape mode with the device rotated left.
+/// This case represents landscape orientation where the device is rotated
+/// 90 degrees counterclockwise from portrait. The left edge of the device
+/// becomes the top edge in this orientation.
   TruvideoSdkCameraOrientationLandscapeLeft = 1,
 /// Landscape mode with the device rotated right.
+/// This case represents landscape orientation where the device is rotated
+/// 90 degrees clockwise from portrait. The right edge of the device
+/// becomes the top edge in this orientation.
   TruvideoSdkCameraOrientationLandscapeRight = 2,
 /// Upside-down portrait mode.
+/// This case represents portrait orientation where the device is rotated
+/// 180 degrees from the standard portrait position. The bottom of the
+/// device becomes the top in this orientation.
   TruvideoSdkCameraOrientationPortraitReverse = 3,
 };
 
@@ -1735,19 +2249,95 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <Truvideo
 @end
 
 
+/// Represents a camera resolution with width and height dimensions.
+/// <code>TruvideoSdkCameraResolution</code> defines a camera resolution using integer width and height values.
+/// This class provides a simple way to represent video capture resolutions and supports
+/// JSON encoding for configuration storage and API communication.
+/// <h2>Usage</h2>
+/// \code
+/// // Create a 1920x1080 resolution
+/// let fullHD = TruvideoSdkCameraResolution(width: 1920, height: 1080)
+///
+/// // Create a 1280x720 resolution
+/// let hd = TruvideoSdkCameraResolution(width: 1280, height: 720)
+///
+/// // Access resolution dimensions
+/// print("Width: \(fullHD.width), Height: \(fullHD.height)")
+///
+/// \endcode<h2>Common Resolutions</h2>
+/// Standard video resolutions include:
+/// <ul>
+///   <li>
+///     <em>4K</em>: 3840×2160 (Ultra High Definition)
+///   </li>
+///   <li>
+///     <em>1080p</em>: 1920×1080 (Full High Definition)
+///   </li>
+///   <li>
+///     <em>720p</em>: 1280×720 (High Definition)
+///   </li>
+///   <li>
+///     <em>480p</em>: 854×480 (Standard Definition)
+///   </li>
+///   <li>
+///     <em>360p</em>: 640×360 (Low Definition)
+///   </li>
+/// </ul>
+/// <h2>JSON Encoding</h2>
+/// The class supports JSON encoding for API communication:
+/// \code
+/// let resolution = TruvideoSdkCameraResolution(width: 1920, height: 1080)
+/// let encoder = JSONEncoder()
+/// let data = try encoder.encode(resolution)
+/// // Result: {"width": 1920, "height": 1080}
+///
+/// \endcode<h2>Objective-C Compatibility</h2>
+/// The class is marked with <code>@objcMembers</code> for full Objective-C interoperability,
+/// allowing seamless integration with existing Objective-C codebases.
+/// <h2>Thread Safety</h2>
+/// This class is thread-safe and can be used concurrently across multiple threads.
+/// All properties are immutable once initialized.
+/// note:
+/// This class is deprecated. Use <code>AVCaptureSession.Preset</code> for resolution handling.
+/// important:
+/// Width and height values are stored as <code>Int32</code> for API compatibility.
 SWIFT_CLASS("_TtC17TruvideoSdkCamera27TruvideoSdkCameraResolution")
 @interface TruvideoSdkCameraResolution : NSObject
-@property (nonatomic, readonly) int32_t width;
+/// The height of the camera resolution in pixels.
+/// This property represents the vertical dimension of the video capture resolution.
+/// It’s stored as an <code>Int32</code> for API compatibility and JSON encoding support.
 @property (nonatomic, readonly) int32_t height;
+/// The width of the camera resolution in pixels.
+/// This property represents the horizontal dimension of the video capture resolution.
+/// It’s stored as an <code>Int32</code> for API compatibility and JSON encoding support.
+@property (nonatomic, readonly) int32_t width;
+/// Creates a new camera resolution with the specified width and height.
+/// This initializer creates a resolution object with the given dimensions.
+/// Both width and height must be positive values representing pixel dimensions.
+/// \param width The horizontal dimension in pixels
+///
+/// \param height The vertical dimension in pixels
+///
+- (nonnull instancetype)initWithWidth:(int32_t)width height:(int32_t)height OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-/// A result of the recording session.
+/// A result object containing the media items captured by the camera.
+/// This class represents the outcome of a camera capture session, containing
+/// all the media items (pictures and videos) that were successfully captured.
+/// The result is designed to be easily serializable and can be encoded for
+/// storage or transmission purposes.
+/// The media array contains all captured items in the order they were captured,
+/// allowing for chronological playback or processing. Each media item includes
+/// its type, file path, metadata, and any associated properties.
 SWIFT_CLASS("_TtC17TruvideoSdkCamera23TruvideoSdkCameraResult")
 @interface TruvideoSdkCameraResult : NSObject
-/// The media recorded during the session.
+/// The collection of media items captured during the camera session.
+/// This array contains all successfully captured pictures and videos,
+/// ordered chronologically by capture time. Each media item includes
+/// the file path, type information, and associated metadata.
 @property (nonatomic, readonly, copy) NSArray<TruvideoSdkCameraMedia *> * _Nonnull media;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1865,13 +2455,26 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera37TruvideoSdkScannerCameraConfiguration")
 
 
 
+
+
+
 @interface UIViewController (SWIFT_EXTENSION(TruvideoSdkCamera))
-/// Presents the Standard Camera view in full-screen mode.
-/// This method displays the <em>TruvideoSdkCamera</em>, allowing users to <em>capture photos and record videos</em> based on the provided
-/// camera configuration.
-/// \param preset A <code>TruvideoSdkCameraConfiguration</code> object that defines the configuration for the camera.
+/// Presents a full-screen camera interface for media capture.
+/// This function creates and presents a camera view that allows users to capture
+/// pictures and videos according to the specified configuration. The camera
+/// interface is displayed as a full-screen modal that covers the entire screen
+/// and provides a native camera experience with capture controls.
+/// The function uses UIKit’s presentation system to show a SwiftUI camera view
+/// wrapped in a UIHostingController. The camera view is presented modally with
+/// full-screen presentation style, ensuring it takes over the entire display
+/// area for an immersive camera experience.
+/// The camera configuration can be customized to control capture limits,
+/// video duration, media types, and other camera behavior settings. When the
+/// user completes their capture session, the onComplete closure is called
+/// with the captured media results.
+/// \param preset Configuration settings for the camera behavior (default: default configuration)
 ///
-/// \param onComplete A callback function that receives a <code>TruvideoSdkCameraResult</code> containing captured media.
+/// \param onComplete Closure called when the camera session completes with captured media
 ///
 - (void)presentTruvideoSdkCameraViewWithPreset:(TruvideoSdkCameraConfiguration * _Nonnull)preset onComplete:(void (^ _Nonnull)(TruvideoSdkCameraResult * _Nonnull))onComplete;
 @end
@@ -1885,17 +2488,6 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera37TruvideoSdkScannerCameraConfiguration")
 /// \param onComplete A callback function that receives a <code>TruvideoSdkCameraResult</code> containing captured media.
 ///
 - (void)presentTruvideoSdkARCameraViewWithPreset:(TruvideoSdkARCameraConfiguration * _Nonnull)preset onComplete:(void (^ _Nonnull)(TruvideoSdkCameraResult * _Nonnull))onComplete;
-@end
-
-
-@interface UIViewController (SWIFT_EXTENSION(TruvideoSdkCamera))
-/// Presents the Scanner Camera view in full-screen mode.
-/// This method displays the <em>TruvideoSdkScannerCamera</em>, allowing users to scan barcodes and QR codes.
-/// \param preset A <code>TruvideoSdkCameraConfiguration</code> object that defines the configuration for the camera.
-///
-/// \param onComplete A callback function that receives a <code>TruvideoSdkCameraScannerCode</code> containing the scanned barcode data.
-///
-- (void)presentTruvideoSdkScannerCameraViewWithPreset:(TruvideoSdkScannerCameraConfiguration * _Nonnull)preset onComplete:(void (^ _Nonnull)(TruvideoSdkCameraScannerCode * _Nullable))onComplete;
 @end
 
 #endif
