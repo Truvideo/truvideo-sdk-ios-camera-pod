@@ -913,11 +913,6 @@ typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraOrientation, open) {
 /// 90 degrees clockwise from portrait. The right edge of the device
 /// becomes the top edge in this orientation.
   TruvideoSdkCameraOrientationLandscapeRight = 2,
-/// Upside-down portrait mode.
-/// This case represents portrait orientation where the device is rotated
-/// 180 degrees from the standard portrait position. The bottom of the
-/// device becomes the top in this orientation.
-  TruvideoSdkCameraOrientationPortraitReverse = 3,
 };
 
 
@@ -1135,6 +1130,7 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera37TruvideoSdkScannerCameraConfiguration")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -2103,11 +2099,6 @@ typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraOrientation, open) {
 /// 90 degrees clockwise from portrait. The right edge of the device
 /// becomes the top edge in this orientation.
   TruvideoSdkCameraOrientationLandscapeRight = 2,
-/// Upside-down portrait mode.
-/// This case represents portrait orientation where the device is rotated
-/// 180 degrees from the standard portrait position. The bottom of the
-/// device becomes the top in this orientation.
-  TruvideoSdkCameraOrientationPortraitReverse = 3,
 };
 
 
@@ -2325,6 +2316,7 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera37TruvideoSdkScannerCameraConfiguration")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 

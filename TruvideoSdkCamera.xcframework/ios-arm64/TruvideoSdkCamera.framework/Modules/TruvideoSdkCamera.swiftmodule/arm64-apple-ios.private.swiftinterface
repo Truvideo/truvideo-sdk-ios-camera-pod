@@ -17,6 +17,7 @@ import RealityKit
 import Swift
 import SwiftUI
 import SwiftUICore
+import TruvideoSdk
 @_exported import TruvideoSdkCamera
 import UIKit
 import UniformTypeIdentifiers
@@ -426,6 +427,14 @@ public struct TruVideoError : Foundation.LocalizedError {
   }
   public init(kind: TruvideoSdkCamera.TruVideoError.ErrorKind, underlyingError: (any Swift.Error)? = nil, column: Swift.Int = #column, line: Swift.Int = #line)
 }
+@objc @objcMembers public class TruvideoSdkCameraResolutionDeprecated : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let height: Swift.Int32
+  @objc final public let width: Swift.Int32
+  @objc public init(width: Swift.Int32, height: Swift.Int32)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
 extension TruvideoSdkCamera.TruvideoSdkCameraConfiguration {
   @objc @available(*, deprecated, message: "Use TruvideoSdkCameraConfiguration(...) initializer instead")
   public static func instantiate(with lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing, imageFormat: TruvideoSdkCamera.TruvideoSdkCameraImageFormat = .jpeg, mode: TruvideoSdkCamera.TruvideoSdkCameraMediaMode, outputPath: Swift.String) -> TruvideoSdkCamera.TruvideoSdkCameraConfiguration
@@ -475,8 +484,9 @@ public protocol TruvideoSdkCameraEventsInterface {
   @objc final public let isHighResolutionPhotoEnabled: Swift.Bool
   @objc final public let lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing
   @objc final public let mode: TruvideoSdkCamera.TruvideoSdkCameraMediaMode
+  final public let orientation: TruvideoSdkCamera.TruvideoSdkCameraOrientation?
   @objc final public let outputPath: Swift.String
-  public init(backResolution: TruvideoSdkCamera.TruvideoSdkCameraResolution = .hd1280x720, backResolutions: [TruvideoSdkCamera.TruvideoSdkCameraResolution] = TruvideoSdkCameraResolution.allCases, flashMode: TruvideoSdkCamera.TruvideoSdkCameraFlashMode = .off, frontResolution: TruvideoSdkCamera.TruvideoSdkCameraResolution = .hd1280x720, frontResolutions: [TruvideoSdkCamera.TruvideoSdkCameraResolution] = TruvideoSdkCameraResolution.allCases, imageFormat: TruvideoSdkCamera.TruvideoSdkCameraImageFormat = .jpeg, lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing = .back, mode: TruvideoSdkCamera.TruvideoSdkCameraMediaMode = .videoAndPicture(), outputPath: Swift.String = "")
+  public init(backResolution: TruvideoSdkCamera.TruvideoSdkCameraResolution = .hd1280x720, backResolutions: [TruvideoSdkCamera.TruvideoSdkCameraResolution] = TruvideoSdkCameraResolution.allCases, flashMode: TruvideoSdkCamera.TruvideoSdkCameraFlashMode = .off, frontResolution: TruvideoSdkCamera.TruvideoSdkCameraResolution = .hd1280x720, frontResolutions: [TruvideoSdkCamera.TruvideoSdkCameraResolution] = TruvideoSdkCameraResolution.allCases, imageFormat: TruvideoSdkCamera.TruvideoSdkCameraImageFormat = .jpeg, lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing = .back, mode: TruvideoSdkCamera.TruvideoSdkCameraMediaMode = .videoAndPicture(), orientation: TruvideoSdkCamera.TruvideoSdkCameraOrientation? = nil, outputPath: Swift.String = "")
   @objc deinit
 }
 @objc public enum TruvideoSdkCameraLensFacing : Swift.Int, Swift.Codable, Swift.RawRepresentable {
@@ -509,6 +519,18 @@ public protocol TruvideoSdkCameraEventsInterface {
     get
   }
   public init?(rawValue: TruvideoSdkCamera.TruvideoSdkCameraImageFormat.RawValue)
+}
+@objc public enum TruvideoSdkCameraOrientation : Swift.Int, Swift.Codable, Swift.RawRepresentable {
+  case portrait
+  case landscapeLeft
+  case landscapeRight
+  public typealias RawValue = Swift.String
+  public var rawValue: TruvideoSdkCamera.TruvideoSdkCameraOrientation.RawValue {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+  public init?(rawValue: TruvideoSdkCamera.TruvideoSdkCameraOrientation.RawValue)
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objcMembers final public class TruvideoSdkCameraResolution : Swift.RawRepresentable, Swift.CaseIterable, Swift.Codable, Swift.Hashable {
   @objc final public let rawValue: Swift.String
@@ -572,27 +594,6 @@ public enum TruvideoSdkCameraEventType {
   final public func encode(to encoder: any Swift.Encoder) throws
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Foundation.UUID
-  @objc deinit
-}
-@objc public enum TruvideoSdkCameraOrientation : Swift.Int, Swift.Codable, Swift.RawRepresentable {
-  case portrait
-  case landscapeLeft
-  case landscapeRight
-  case portraitReverse
-  public typealias RawValue = Swift.String
-  public var rawValue: TruvideoSdkCamera.TruvideoSdkCameraOrientation.RawValue {
-    get
-  }
-  public init(from decoder: any Swift.Decoder) throws
-  public init?(rawValue: TruvideoSdkCamera.TruvideoSdkCameraOrientation.RawValue)
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @objcMembers public class TruvideoSdkCameraResolutionDeprecated : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let height: Swift.Int32
-  @objc final public let width: Swift.Int32
-  @objc public init(width: Swift.Int32, height: Swift.Int32)
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 extension TruvideoSdkCamera.TruvideoSdkCameraMediaMode {
