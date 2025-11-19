@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Mmx76dlKyef/V0jkwOwCqf4sa0Y=
+		98tcQqH6ESyTQC3nikSl5TWzvEQ=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Lbm+PDAIgBi142Qm7aI3dqULQvM=
+		njGzHtNwSrAmhADpjj7ZSkS9V5g=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Mmx76dlKyef/V0jkwOwCqf4sa0Y=
+		98tcQqH6ESyTQC3nikSl5TWzvEQ=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,11 +66,15 @@
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		j561GnCBEY5Shfr8CXad0ILjQS0=
+		zTg+6JEcQa8q4oAENgTLShuaYlo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		64Ffiz9246Asp5vbvnxMst13LXI=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		vH8JO85in3H77W1C3xp/tj2QrRY=
 		</data>
 		<key>arrow.usdz</key>
 		<data>
@@ -143,7 +147,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oG1L8rD/5vo4pbfDYXdCxLbTCRQLl0GYt/mc5kSXobQ=
+			2MU4FAxcUe2oNOaHkGON1DMgOn/1M6NVBe/MJzI18R8=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -171,14 +175,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DdLQxmqoO0G3jXhwe11R/gpYzCS2LJnF0YCEvWM78gE=
+			1fa+tDu7ooP/ahYOIzMQCtmFSd+BnCn/7BNci4X8Fho=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oG1L8rD/5vo4pbfDYXdCxLbTCRQLl0GYt/mc5kSXobQ=
+			2MU4FAxcUe2oNOaHkGON1DMgOn/1M6NVBe/MJzI18R8=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -206,7 +210,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a5nqCY6hP/JckQjzAbNKcsEh02iXrWGcU22HMHcHCLo=
+			tZbP5dadkx4xtcGElcPI7mfMEZCblUBgUZFlaFJQhiA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -214,6 +218,13 @@
 			<key>hash2</key>
 			<data>
 			0ZtkcKcDYPRK9VoGjlJ298nSkN6z3iXLb0ypS5R8WEg=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			44vvMt61i9tVg185MdxruopyoW8Gt+IVjNV0ChNwZHA=
 			</data>
 		</dict>
 		<key>arrow.usdz</key>

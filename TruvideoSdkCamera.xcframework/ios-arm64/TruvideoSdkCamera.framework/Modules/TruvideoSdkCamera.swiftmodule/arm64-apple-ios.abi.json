@@ -30160,70 +30160,70 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 2948,
+      "offset": 2894,
       "length": 6,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 3132,
+      "offset": 3078,
       "length": 6,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 3317,
+      "offset": 3263,
       "length": 6,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 3461,
+      "offset": 3407,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 3465,
+      "offset": 3411,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 3470,
+      "offset": 3416,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 3475,
+      "offset": 3421,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 9937,
+      "offset": 9791,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 9961,
+      "offset": 9815,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/MediaMode\/TruvideoSdkCameraMediaMode.swift",
       "kind": "IntegerLiteral",
-      "offset": 9997,
+      "offset": 9851,
       "length": 1,
       "value": "0"
     },
@@ -30358,7 +30358,7 @@
       "kind": "StringLiteral",
       "offset": 119,
       "length": 8,
-      "value": "\"78.2.0\""
+      "value": "\"78.2.1\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
