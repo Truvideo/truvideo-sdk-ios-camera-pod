@@ -109,7 +109,7 @@ public struct DSColorScheme : Swift.Sendable {
   public init(primary: SwiftUICore.Color, onPrimary: SwiftUICore.Color, secondary: SwiftUICore.Color, onSecondary: SwiftUICore.Color, tertiary: SwiftUICore.Color, onTertiary: SwiftUICore.Color, error: SwiftUICore.Color, onError: SwiftUICore.Color, surface: SwiftUICore.Color, surfaceContainer: SwiftUICore.Color, onSurface: SwiftUICore.Color)
   public func copyWith(primary: SwiftUICore.Color? = nil, onPrimary: SwiftUICore.Color? = nil, secondary: SwiftUICore.Color? = nil, onSecondary: SwiftUICore.Color? = nil, tertiary: SwiftUICore.Color? = nil, onTertiary: SwiftUICore.Color? = nil, error: SwiftUICore.Color? = nil, onError: SwiftUICore.Color? = nil, surface: SwiftUICore.Color? = nil, surfaceContainer: SwiftUICore.Color? = nil, onSurface: SwiftUICore.Color? = nil) -> TruvideoSdkCamera.DSColorScheme
 }
-public struct DSIcons {
+public enum DSIcons {
 }
 public struct DSState : Swift.OptionSet, Swift.Sendable {
   public let rawValue: Swift.Int
@@ -124,7 +124,7 @@ public struct DSState : Swift.OptionSet, Swift.Sendable {
   public typealias RawValue = Swift.Int
 }
 public struct DSStateProperty<T> : Swift.Sendable {
-  public let resolve: (@_Concurrency.MainActor @Sendable (TruvideoSdkCamera.DSState) -> T)
+  public let resolve: @_Concurrency.MainActor @Sendable (TruvideoSdkCamera.DSState) -> T
   public static func all(_ resolve: @autoclosure @escaping @_Concurrency.MainActor @Sendable () -> T) -> TruvideoSdkCamera.DSStateProperty<T>
   public init(resolve: @escaping @_Concurrency.MainActor @Sendable (TruvideoSdkCamera.DSState) -> T)
 }
@@ -265,10 +265,6 @@ public struct SpacingTheme : Swift.Sendable {
   public init(spaceUnit: CoreFoundation.CGFloat = 4)
   public func x(_ multiple: Swift.Double) -> CoreFoundation.CGFloat
 }
-
-
-
-
 
 
 
@@ -454,22 +450,6 @@ extension SwiftUICore.View {
 @objc extension UIKit.UIViewController {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func presentTruvideoSdkARCameraView(preset: TruvideoSdkCamera.TruvideoSdkARCameraConfiguration = .init(flashMode: .off, mode: .videoAndPicture(), orientation: nil), onComplete: @escaping (TruvideoSdkCamera.TruvideoSdkCameraResult) -> Swift.Void)
 }
-public let TruvideoSdkCamera: any TruvideoSdkCamera.TruvideoSdkCameraEventsInterface & TruvideoSdkCamera.TruvideoSdkCameraInterface
-@_inheritsConvenienceInitializers @objc public class TruvideoSdkCameraProvider : ObjectiveC.NSObject {
-  @objc public static let shared: any TruvideoSdkCamera.TruvideoSdkCameraInterface
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc public protocol TruvideoSdkCameraInterface {
-  @objc var camera: any TruvideoSdkCamera.TruvideoSdkCameraDelegate { get }
-  @objc func configureTruvideoSdkAppDelegate(_ appDelegate: any TruvideoSdkCamera.TruvideoSdkCameraAppDelegate)
-}
-public protocol TruvideoSdkCameraEventsInterface {
-  var events: TruvideoSdkCamera.TruvideoSdkCameraEventObserver { get }
-}
-@objc public protocol TruvideoSdkCameraDelegate {
-  @objc func getTruvideoSdkCameraInformation() -> TruvideoSdkCamera.TruvideoSdkCameraInformation
-}
 @objc public protocol TruvideoSdkCameraAppDelegate : UIKit.UIApplicationDelegate {
   @objc var orientationLock: UIKit.UIInterfaceOrientationMask { get set }
   @objc dynamic func application(_ application: UIKit.UIApplication, supportedInterfaceOrientationsFor window: UIKit.UIWindow?) -> UIKit.UIInterfaceOrientationMask
@@ -545,11 +525,6 @@ public protocol TruvideoSdkCameraEventsInterface {
   public typealias RawValue = Swift.String
   @objc deinit
 }
-public typealias TruvideoSdkCameraEventObserver = Combine.AnyPublisher<TruvideoSdkCamera.TruvideoSdkCameraEvent, Swift.Never>
-public struct TruvideoSdkCameraEvent {
-  public let type: TruvideoSdkCamera.TruvideoSdkCameraEventType
-  public let createdAt: Foundation.Date
-}
 public enum TruvideoSdkCameraEventType {
   case truvideoSdkCameraEventFlashModeChanged(flashMode: TruvideoSdkCamera.TruvideoSdkCameraFlashMode)
   case truvideoSdkCameraEventCameraFlipped(lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing)
@@ -563,22 +538,6 @@ public enum TruvideoSdkCameraEventType {
   case truvideoSdkCameraEventRecordingStarted(resolution: TruvideoSdkCamera.TruvideoSdkCameraResolutionDeprecated, orientation: TruvideoSdkCamera.TruvideoSdkCameraOrientation, lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing)
   case truvideoSdkCameraEventResolutionChanged(resolution: TruvideoSdkCamera.TruvideoSdkCameraResolutionDeprecated)
   case truvideoSdkCameraEventZoomChanged(zoom: Swift.Float)
-}
-@_hasMissingDesignatedInitializers @objc public class TruvideoSdkCameraDevice : ObjectiveC.NSObject, Swift.Encodable {
-  @objc final public let id: Swift.String
-  @objc final public let lensFacing: TruvideoSdkCamera.TruvideoSdkCameraLensFacing
-  @objc final public let resolutions: [TruvideoSdkCamera.TruvideoSdkCameraResolutionDeprecated]
-  @objc final public let withFlash: Swift.Bool
-  @objc final public let isTapToFocusEnabled: Swift.Bool
-  @objc final public let sensorOrientation: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers @objc public class TruvideoSdkCameraInformation : ObjectiveC.NSObject, Swift.Encodable {
-  @objc final public let frontCamera: TruvideoSdkCamera.TruvideoSdkCameraDevice?
-  @objc final public let backCamera: TruvideoSdkCamera.TruvideoSdkCameraDevice?
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc @objcMembers final public class TruvideoSdkCameraMedia : ObjectiveC.NSObject, Swift.Codable, Swift.Identifiable {
   @objc final public let id: Foundation.UUID
@@ -689,7 +648,6 @@ public typealias TruvideoSdkScannerCameraViewCallback = (TruvideoSdkCamera.Truvi
 extension UIKit.UIViewController {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func presentTruvideoSdkCameraView(preset: TruvideoSdkCamera.TruvideoSdkCameraConfiguration = TruvideoSdkCameraConfiguration(), onComplete: @escaping (TruvideoSdkCamera.TruvideoSdkCameraResult) -> Swift.Void)
 }
-
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func presentTruvideoSdkCameraView(isPresented: SwiftUICore.Binding<Swift.Bool>, preset: TruvideoSdkCamera.TruvideoSdkCameraConfiguration = TruvideoSdkCameraConfiguration(), onComplete: @escaping (TruvideoSdkCamera.TruvideoSdkCameraResult) -> Swift.Void) -> some SwiftUICore.View
   

@@ -534,62 +534,6 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera30TruvideoSdkCameraConfiguration")
 @end
 
 
-@class TruvideoSdkCameraInformation;
-
-/// Defines the delegate responsible for retrieving camera information.
-/// The <code>TruvideoSdkCameraDelegate</code> allows applications to fetch camera details, such as available lenses,
-/// supported resolutions, and hardware capabilities.
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraInfo = TruvideoSdkCameraProvider.shared.camera.getTruvideoSdkCameraInformation()
-///
-/// \endcode
-SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera25TruvideoSdkCameraDelegate_")
-@protocol TruvideoSdkCameraDelegate
-/// Retrieves all available camera information for both <em>front</em> and <em>back</em> cameras.
-///
-/// returns:
-/// A <code>TruvideoSdkCameraInformation</code> object containing detailed camera specifications.
-- (TruvideoSdkCameraInformation * _Nonnull)getTruvideoSdkCameraInformation SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class TruvideoSdkCameraResolutionDeprecated;
-
-/// Represents a camera device available on the system.
-/// <code>TruvideoSdkCameraDevice</code> provides details about a specific camera, including its <em>ID, lens direction, supported resolutions, flash availability, and sensor orientation</em>.
-/// <h2>Example Usage</h2>
-/// \code
-/// let backCamera = TruvideoSdkCameraDevice(
-///     id: "com.truvideo.backcamera",
-///     lensFacing: .back,
-///     resolutions: [TruvideoSdkCameraResolution(width: 1920, height: 1080)],
-///     withFlash: true,
-///     isTapToFocusEnabled: true,
-///     sensorOrientation: 90
-/// )
-///
-/// \endcode
-SWIFT_CLASS("_TtC17TruvideoSdkCamera23TruvideoSdkCameraDevice")
-@interface TruvideoSdkCameraDevice : NSObject
-/// The unique identifier of the camera device.
-@property (nonatomic, readonly, copy) NSString * _Nonnull id;
-/// The lens direction of the camera.
-/// Specifies whether the camera is <em>front-facing</em> or <em>back-facing</em>.
-@property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
-/// The list of supported resolutions for this camera device.
-/// Each resolution represents a width-height pair that defines the camera’s image capture capabilities.
-@property (nonatomic, readonly, copy) NSArray<TruvideoSdkCameraResolutionDeprecated *> * _Nonnull resolutions;
-/// Indicates whether the camera device has a built-in flash.
-@property (nonatomic, readonly) BOOL withFlash;
-/// Indicates whether the camera supports tap-to-focus functionality.
-@property (nonatomic, readonly) BOOL isTapToFocusEnabled;
-/// The sensor orientation of the camera, in degrees.
-/// Represents the natural orientation of the camera sensor relative to the device’s display.
-@property (nonatomic, readonly) NSInteger sensorOrientation;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 /// An enumeration representing the camera flash mode settings.
 /// This enum defines the available flash modes for camera capture, providing
 /// control over whether the camera flash is active during photo or video
@@ -634,46 +578,6 @@ typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraImageFormat, open) {
 /// but exact preservation of quality, including transparency.
   TruvideoSdkCameraImageFormatPng = 1,
 };
-
-
-/// Provides detailed information about available camera devices.
-/// <code>TruvideoSdkCameraInformation</code> contains references to the <em>front-facing</em> and <em>back-facing</em> cameras available on the device.
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraInfo = TruvideoSdkCameraInformation(frontCamera: frontDevice, backCamera: backDevice)
-/// print("Front Camera ID: \(cameraInfo.frontCamera?.id ?? "N/A")")
-///
-/// \endcode
-SWIFT_CLASS("_TtC17TruvideoSdkCamera28TruvideoSdkCameraInformation")
-@interface TruvideoSdkCameraInformation : NSObject
-/// The front-facing camera device, if available.
-@property (nonatomic, readonly, strong) TruvideoSdkCameraDevice * _Nullable frontCamera;
-/// The back-facing camera device, if available.
-@property (nonatomic, readonly, strong) TruvideoSdkCameraDevice * _Nullable backCamera;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// Defines the interface for accessing <code>TruvideoSdkCamera</code> functionalities.
-/// The <code>TruvideoSdkCameraInterface</code> provides access to core camera functionality, including
-/// retrieving available cameras and configuring the SDK.
-/// <h2>Example Usage</h2>
-/// \code
-/// let sdkCamera = TruvideoSdkCameraProvider.shared
-/// sdkCamera.configureTruvideoSdkAppDelegate(myAppDelegate)
-///
-/// \endcode
-SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera26TruvideoSdkCameraInterface_")
-@protocol TruvideoSdkCameraInterface
-/// Provides the main camera delegate, responsible for handling SDK camera operations.
-@property (nonatomic, readonly, strong) id <TruvideoSdkCameraDelegate> _Nonnull camera;
-/// Configures the Truvideo SDK with an application delegate.
-/// This method should be called during application setup to <em>initialize the camera SDK</em>.
-/// \param appDelegate The <code>TruvideoSdkCameraAppDelegate</code> instance handling app-wide camera events.
-///
-- (void)configureTruvideoSdkAppDelegate:(id <TruvideoSdkCameraAppDelegate> _Nonnull)appDelegate;
-@end
 
 /// An enumeration representing the camera lens orientation.
 /// This enum defines the two possible camera lens orientations available
@@ -914,24 +818,6 @@ typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraOrientation, open) {
 /// becomes the top edge in this orientation.
   TruvideoSdkCameraOrientationLandscapeRight = 2,
 };
-
-
-/// Provides a shared instance for accessing <code>TruvideoSdkCamera</code> functionalities.
-/// <code>TruvideoSdkCameraProvider</code> acts as a singleton, offering a centralized way to access the <em>Truvideo Camera SDK</em>.
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraInstance = TruvideoSdkCameraProvider.shared
-/// let cameraInfo = cameraInstance.getTruvideoSdkCameraInformation()
-///
-/// \endcode
-SWIFT_CLASS("_TtC17TruvideoSdkCamera25TruvideoSdkCameraProvider")
-@interface TruvideoSdkCameraProvider : NSObject
-/// The shared instance for accessing <code>TruvideoSdkCamera</code> functionalities.
-/// This instance provides access to all SDK camera features.
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <TruvideoSdkCameraInterface> _Nonnull shared;)
-+ (id <TruvideoSdkCameraInterface> _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 /// Represents a camera resolution with width and height dimensions.
@@ -1720,62 +1606,6 @@ SWIFT_CLASS("_TtC17TruvideoSdkCamera30TruvideoSdkCameraConfiguration")
 @end
 
 
-@class TruvideoSdkCameraInformation;
-
-/// Defines the delegate responsible for retrieving camera information.
-/// The <code>TruvideoSdkCameraDelegate</code> allows applications to fetch camera details, such as available lenses,
-/// supported resolutions, and hardware capabilities.
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraInfo = TruvideoSdkCameraProvider.shared.camera.getTruvideoSdkCameraInformation()
-///
-/// \endcode
-SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera25TruvideoSdkCameraDelegate_")
-@protocol TruvideoSdkCameraDelegate
-/// Retrieves all available camera information for both <em>front</em> and <em>back</em> cameras.
-///
-/// returns:
-/// A <code>TruvideoSdkCameraInformation</code> object containing detailed camera specifications.
-- (TruvideoSdkCameraInformation * _Nonnull)getTruvideoSdkCameraInformation SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class TruvideoSdkCameraResolutionDeprecated;
-
-/// Represents a camera device available on the system.
-/// <code>TruvideoSdkCameraDevice</code> provides details about a specific camera, including its <em>ID, lens direction, supported resolutions, flash availability, and sensor orientation</em>.
-/// <h2>Example Usage</h2>
-/// \code
-/// let backCamera = TruvideoSdkCameraDevice(
-///     id: "com.truvideo.backcamera",
-///     lensFacing: .back,
-///     resolutions: [TruvideoSdkCameraResolution(width: 1920, height: 1080)],
-///     withFlash: true,
-///     isTapToFocusEnabled: true,
-///     sensorOrientation: 90
-/// )
-///
-/// \endcode
-SWIFT_CLASS("_TtC17TruvideoSdkCamera23TruvideoSdkCameraDevice")
-@interface TruvideoSdkCameraDevice : NSObject
-/// The unique identifier of the camera device.
-@property (nonatomic, readonly, copy) NSString * _Nonnull id;
-/// The lens direction of the camera.
-/// Specifies whether the camera is <em>front-facing</em> or <em>back-facing</em>.
-@property (nonatomic, readonly) enum TruvideoSdkCameraLensFacing lensFacing;
-/// The list of supported resolutions for this camera device.
-/// Each resolution represents a width-height pair that defines the camera’s image capture capabilities.
-@property (nonatomic, readonly, copy) NSArray<TruvideoSdkCameraResolutionDeprecated *> * _Nonnull resolutions;
-/// Indicates whether the camera device has a built-in flash.
-@property (nonatomic, readonly) BOOL withFlash;
-/// Indicates whether the camera supports tap-to-focus functionality.
-@property (nonatomic, readonly) BOOL isTapToFocusEnabled;
-/// The sensor orientation of the camera, in degrees.
-/// Represents the natural orientation of the camera sensor relative to the device’s display.
-@property (nonatomic, readonly) NSInteger sensorOrientation;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 /// An enumeration representing the camera flash mode settings.
 /// This enum defines the available flash modes for camera capture, providing
 /// control over whether the camera flash is active during photo or video
@@ -1820,46 +1650,6 @@ typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraImageFormat, open) {
 /// but exact preservation of quality, including transparency.
   TruvideoSdkCameraImageFormatPng = 1,
 };
-
-
-/// Provides detailed information about available camera devices.
-/// <code>TruvideoSdkCameraInformation</code> contains references to the <em>front-facing</em> and <em>back-facing</em> cameras available on the device.
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraInfo = TruvideoSdkCameraInformation(frontCamera: frontDevice, backCamera: backDevice)
-/// print("Front Camera ID: \(cameraInfo.frontCamera?.id ?? "N/A")")
-///
-/// \endcode
-SWIFT_CLASS("_TtC17TruvideoSdkCamera28TruvideoSdkCameraInformation")
-@interface TruvideoSdkCameraInformation : NSObject
-/// The front-facing camera device, if available.
-@property (nonatomic, readonly, strong) TruvideoSdkCameraDevice * _Nullable frontCamera;
-/// The back-facing camera device, if available.
-@property (nonatomic, readonly, strong) TruvideoSdkCameraDevice * _Nullable backCamera;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// Defines the interface for accessing <code>TruvideoSdkCamera</code> functionalities.
-/// The <code>TruvideoSdkCameraInterface</code> provides access to core camera functionality, including
-/// retrieving available cameras and configuring the SDK.
-/// <h2>Example Usage</h2>
-/// \code
-/// let sdkCamera = TruvideoSdkCameraProvider.shared
-/// sdkCamera.configureTruvideoSdkAppDelegate(myAppDelegate)
-///
-/// \endcode
-SWIFT_PROTOCOL("_TtP17TruvideoSdkCamera26TruvideoSdkCameraInterface_")
-@protocol TruvideoSdkCameraInterface
-/// Provides the main camera delegate, responsible for handling SDK camera operations.
-@property (nonatomic, readonly, strong) id <TruvideoSdkCameraDelegate> _Nonnull camera;
-/// Configures the Truvideo SDK with an application delegate.
-/// This method should be called during application setup to <em>initialize the camera SDK</em>.
-/// \param appDelegate The <code>TruvideoSdkCameraAppDelegate</code> instance handling app-wide camera events.
-///
-- (void)configureTruvideoSdkAppDelegate:(id <TruvideoSdkCameraAppDelegate> _Nonnull)appDelegate;
-@end
 
 /// An enumeration representing the camera lens orientation.
 /// This enum defines the two possible camera lens orientations available
@@ -2100,24 +1890,6 @@ typedef SWIFT_ENUM(NSInteger, TruvideoSdkCameraOrientation, open) {
 /// becomes the top edge in this orientation.
   TruvideoSdkCameraOrientationLandscapeRight = 2,
 };
-
-
-/// Provides a shared instance for accessing <code>TruvideoSdkCamera</code> functionalities.
-/// <code>TruvideoSdkCameraProvider</code> acts as a singleton, offering a centralized way to access the <em>Truvideo Camera SDK</em>.
-/// <h2>Example Usage</h2>
-/// \code
-/// let cameraInstance = TruvideoSdkCameraProvider.shared
-/// let cameraInfo = cameraInstance.getTruvideoSdkCameraInformation()
-///
-/// \endcode
-SWIFT_CLASS("_TtC17TruvideoSdkCamera25TruvideoSdkCameraProvider")
-@interface TruvideoSdkCameraProvider : NSObject
-/// The shared instance for accessing <code>TruvideoSdkCamera</code> functionalities.
-/// This instance provides access to all SDK camera features.
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) id <TruvideoSdkCameraInterface> _Nonnull shared;)
-+ (id <TruvideoSdkCameraInterface> _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 /// Represents a camera resolution with width and height dimensions.
