@@ -14791,6 +14791,518 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Var",
+        "name": "TruvideoSdkCamera",
+        "printedName": "TruvideoSdkCamera",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "ProtocolComposition",
+            "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraEventsInterface & TruvideoSdkCamera.TruvideoSdkCameraInterface"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:17TruvideoSdkCameraA2A0abC15EventsInterface_AA0abcE0pvp",
+        "mangledName": "$s17TruvideoSdkCameraA2A0abC15EventsInterface_AA0abcE0pvp",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraEventsInterface & TruvideoSdkCamera.TruvideoSdkCameraInterface"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:17TruvideoSdkCameraA2A0abC15EventsInterface_AA0abcE0pvg",
+            "mangledName": "$s17TruvideoSdkCameraA2A0abC15EventsInterface_AA0abcE0pvg",
+            "moduleName": "TruvideoSdkCamera",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TruvideoSdkCameraProvider",
+        "printedName": "TruvideoSdkCameraProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraInterface",
+                "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraInterface",
+                "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider(cpy)shared",
+            "mangledName": "$s17TruvideoSdkCamera0abC8ProviderC6sharedAA0abC9Interface_pvpZ",
+            "moduleName": "TruvideoSdkCamera",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraInterface",
+                    "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraInterface",
+                    "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider(cm)shared",
+                "mangledName": "$s17TruvideoSdkCamera0abC8ProviderC6sharedAA0abC9Interface_pvgZ",
+                "moduleName": "TruvideoSdkCamera",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraProvider",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraProvider",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider(im)init",
+            "mangledName": "$s17TruvideoSdkCamera0abC8ProviderCACycfc",
+            "moduleName": "TruvideoSdkCamera",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider",
+        "mangledName": "$s17TruvideoSdkCamera0abC8ProviderC",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TruvideoSdkCameraInterface",
+        "printedName": "TruvideoSdkCameraInterface",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "camera",
+            "printedName": "camera",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraDelegate",
+                "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraDelegate",
+                "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraDelegate"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface(py)camera",
+            "mangledName": "$s17TruvideoSdkCamera0abC9InterfaceP6cameraAA0abC8Delegate_pvp",
+            "moduleName": "TruvideoSdkCamera",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraDelegate",
+                    "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraDelegate",
+                    "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraDelegate"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface(im)camera",
+                "mangledName": "$s17TruvideoSdkCamera0abC9InterfaceP6cameraAA0abC8Delegate_pvg",
+                "moduleName": "TruvideoSdkCamera",
+                "genericSig": "<τ_0_0 where τ_0_0 : TruvideoSdkCamera.TruvideoSdkCameraInterface>",
+                "sugared_genericSig": "<Self where Self : TruvideoSdkCamera.TruvideoSdkCameraInterface>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configureTruvideoSdkAppDelegate",
+            "printedName": "configureTruvideoSdkAppDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraAppDelegate",
+                "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraAppDelegate",
+                "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraAppDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface(im)configureTruvideoSdkAppDelegate:",
+            "mangledName": "$s17TruvideoSdkCamera0abC9InterfaceP09configureaB11AppDelegateyyAA0abcfG0_pF",
+            "moduleName": "TruvideoSdkCamera",
+            "genericSig": "<τ_0_0 where τ_0_0 : TruvideoSdkCamera.TruvideoSdkCameraInterface>",
+            "sugared_genericSig": "<Self where Self : TruvideoSdkCamera.TruvideoSdkCameraInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface",
+        "mangledName": "$s17TruvideoSdkCamera0abC9InterfaceP",
+        "moduleName": "TruvideoSdkCamera",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TruvideoSdkCameraEventsInterface",
+        "printedName": "TruvideoSdkCameraEventsInterface",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "events",
+            "printedName": "events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<TruvideoSdkCamera.TruvideoSdkCameraEvent, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraEvent",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraEvent",
+                    "usr": "s:17TruvideoSdkCamera0abC5EventV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17TruvideoSdkCamera0abC15EventsInterfaceP6events7Combine12AnyPublisherVyAA0abC5EventVs5NeverOGvp",
+            "mangledName": "$s17TruvideoSdkCamera0abC15EventsInterfaceP6events7Combine12AnyPublisherVyAA0abC5EventVs5NeverOGvp",
+            "moduleName": "TruvideoSdkCamera",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<TruvideoSdkCamera.TruvideoSdkCameraEvent, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TruvideoSdkCameraEvent",
+                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraEvent",
+                        "usr": "s:17TruvideoSdkCamera0abC5EventV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TruvideoSdkCamera0abC15EventsInterfaceP6events7Combine12AnyPublisherVyAA0abC5EventVs5NeverOGvg",
+                "mangledName": "$s17TruvideoSdkCamera0abC15EventsInterfaceP6events7Combine12AnyPublisherVyAA0abC5EventVs5NeverOGvg",
+                "moduleName": "TruvideoSdkCamera",
+                "genericSig": "<τ_0_0 where τ_0_0 : TruvideoSdkCamera.TruvideoSdkCameraEventsInterface>",
+                "sugared_genericSig": "<Self where Self : TruvideoSdkCamera.TruvideoSdkCameraEventsInterface>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17TruvideoSdkCamera0abC15EventsInterfaceP",
+        "mangledName": "$s17TruvideoSdkCamera0abC15EventsInterfaceP",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TruvideoSdkCameraDelegate",
+        "printedName": "TruvideoSdkCameraDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getTruvideoSdkCameraInformation",
+            "printedName": "getTruvideoSdkCameraInformation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraInformation",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraInformation",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraDelegate(im)getTruvideoSdkCameraInformation",
+            "mangledName": "$s17TruvideoSdkCamera0abC8DelegateP03getabC11InformationAA0abcF0CyF",
+            "moduleName": "TruvideoSdkCamera",
+            "genericSig": "<τ_0_0 where τ_0_0 : TruvideoSdkCamera.TruvideoSdkCameraDelegate>",
+            "sugared_genericSig": "<Self where Self : TruvideoSdkCamera.TruvideoSdkCameraDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraDelegate",
+        "mangledName": "$s17TruvideoSdkCamera0abC8DelegateP",
+        "moduleName": "TruvideoSdkCamera",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -17551,6 +18063,137 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TruvideoSdkCameraEvent",
+        "printedName": "TruvideoSdkCameraEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraEventType",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraEventType",
+                "usr": "s:17TruvideoSdkCamera0abC9EventTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17TruvideoSdkCamera0abC5EventV4typeAA0abcD4TypeOvp",
+            "mangledName": "$s17TruvideoSdkCamera0abC5EventV4typeAA0abcD4TypeOvp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraEventType",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraEventType",
+                    "usr": "s:17TruvideoSdkCamera0abC9EventTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TruvideoSdkCamera0abC5EventV4typeAA0abcD4TypeOvg",
+                "mangledName": "$s17TruvideoSdkCamera0abC5EventV4typeAA0abcD4TypeOvg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "createdAt",
+            "printedName": "createdAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17TruvideoSdkCamera0abC5EventV9createdAt10Foundation4DateVvp",
+            "mangledName": "$s17TruvideoSdkCamera0abC5EventV9createdAt10Foundation4DateVvp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TruvideoSdkCamera0abC5EventV9createdAt10Foundation4DateVvg",
+                "mangledName": "$s17TruvideoSdkCamera0abC5EventV9createdAt10Foundation4DateVvg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17TruvideoSdkCamera0abC5EventV",
+        "mangledName": "$s17TruvideoSdkCamera0abC5EventV",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "TruvideoSdkCameraEventType",
         "printedName": "TruvideoSdkCameraEventType",
@@ -18351,6 +18994,770 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TruvideoSdkCameraDevice",
+        "printedName": "TruvideoSdkCameraDevice",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)id",
+            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC2idSSvp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)id",
+                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC2idSSvg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lensFacing",
+            "printedName": "lensFacing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraLensFacing",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraLensFacing",
+                "usr": "c:@M@TruvideoSdkCamera@E@TruvideoSdkCameraLensFacing"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)lensFacing",
+            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC10lensFacingAA0abc4LensF0Ovp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraLensFacing",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraLensFacing",
+                    "usr": "c:@M@TruvideoSdkCamera@E@TruvideoSdkCameraLensFacing"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)lensFacing",
+                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC10lensFacingAA0abc4LensF0Ovg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resolutions",
+            "printedName": "resolutions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[TruvideoSdkCamera.TruvideoSdkCameraResolution]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraResolution",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraResolution",
+                    "usr": "s:17TruvideoSdkCamera0abC10ResolutionC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17TruvideoSdkCamera0abC6DeviceC11resolutionsSayAA0abC10ResolutionCGvp",
+            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC11resolutionsSayAA0abC10ResolutionCGvp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TruvideoSdkCamera.TruvideoSdkCameraResolution]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TruvideoSdkCameraResolution",
+                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraResolution",
+                        "usr": "s:17TruvideoSdkCamera0abC10ResolutionC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17TruvideoSdkCamera0abC6DeviceC11resolutionsSayAA0abC10ResolutionCGvg",
+                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC11resolutionsSayAA0abC10ResolutionCGvg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "withFlash",
+            "printedName": "withFlash",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)withFlash",
+            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC9withFlashSbvp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)withFlash",
+                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC9withFlashSbvg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTapToFocusEnabled",
+            "printedName": "isTapToFocusEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)isTapToFocusEnabled",
+            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC19isTapToFocusEnabledSbvp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)isTapToFocusEnabled",
+                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC19isTapToFocusEnabledSbvg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sensorOrientation",
+            "printedName": "sensorOrientation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)sensorOrientation",
+            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC17sensorOrientationSivp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)sensorOrientation",
+                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC17sensorOrientationSivg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17TruvideoSdkCamera0abC6DeviceC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC6encode2toys7Encoder_p_tKF",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraDevice",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)init",
+            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceCACycfc",
+            "moduleName": "TruvideoSdkCamera",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice",
+        "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TruvideoSdkCameraInformation",
+        "printedName": "TruvideoSdkCameraInformation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "frontCamera",
+            "printedName": "frontCamera",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraDevice",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
+                    "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(py)frontCamera",
+            "mangledName": "$s17TruvideoSdkCamera0abC11InformationC05frontC0AA0abC6DeviceCSgvp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TruvideoSdkCameraDevice",
+                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
+                        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(im)frontCamera",
+                "mangledName": "$s17TruvideoSdkCamera0abC11InformationC05frontC0AA0abC6DeviceCSgvg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backCamera",
+            "printedName": "backCamera",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraDevice",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
+                    "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(py)backCamera",
+            "mangledName": "$s17TruvideoSdkCamera0abC11InformationC04backC0AA0abC6DeviceCSgvp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TruvideoSdkCameraDevice",
+                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
+                        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(im)backCamera",
+                "mangledName": "$s17TruvideoSdkCamera0abC11InformationC04backC0AA0abC6DeviceCSgvg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraInformation",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraInformation",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(im)init",
+            "mangledName": "$s17TruvideoSdkCamera0abC11InformationCACycfc",
+            "moduleName": "TruvideoSdkCamera",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17TruvideoSdkCamera0abC11InformationC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17TruvideoSdkCamera0abC11InformationC6encode2toys7Encoder_p_tKF",
+            "moduleName": "TruvideoSdkCamera",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation",
+        "mangledName": "$s17TruvideoSdkCamera0abC11InformationC",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -20169,6 +21576,23 @@
             "mangledName": "$sSY"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
       },
       {
         "kind": "Import",
@@ -24867,7 +26291,7 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel+Actions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6097,
+      "offset": 6373,
       "length": 2,
       "value": "10"
     },
@@ -25042,7 +26466,7 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 22069,
+      "offset": 22228,
       "length": 5,
       "value": "false"
     },
@@ -29160,7 +30584,7 @@
       "kind": "StringLiteral",
       "offset": 119,
       "length": 13,
-      "value": "\"78.2.2-RC.5\""
+      "value": "\"78.2.2-RC.6\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
