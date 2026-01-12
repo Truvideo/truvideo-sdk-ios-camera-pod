@@ -27,17 +27,6 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import simd
 
-@_Concurrency.MainActor @preconcurrency public struct AsyncRemoteImage<Content> : SwiftUICore.View where Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public init<I, P>(url: Foundation.URL?, transaction: SwiftUICore.Transaction = Transaction(), @SwiftUICore.ViewBuilder content: @escaping (SwiftUICore.Image) -> I, @SwiftUICore.ViewBuilder placeholder: @escaping () -> P) where Content == SwiftUICore._ConditionalContent<I, P>, I : SwiftUICore.View, P : SwiftUICore.View
-  @_Concurrency.MainActor @preconcurrency public init<P>(url: Foundation.URL?, transaction: SwiftUICore.Transaction = Transaction(), @SwiftUICore.ViewBuilder placeholder: @escaping () -> P) where Content == SwiftUICore._ConditionalContent<SwiftUICore.Image, P>, P : SwiftUICore.View
-  @_Concurrency.MainActor @preconcurrency public init<I, P>(url: Foundation.URL?, transaction: SwiftUICore.Transaction = Transaction(), placeholder: @autoclosure @escaping () -> P, @SwiftUICore.ViewBuilder content: @escaping (SwiftUICore.Image) -> I) where Content == SwiftUICore._ConditionalContent<I, P>, I : SwiftUICore.View, P : SwiftUICore.View
-  @_Concurrency.MainActor @preconcurrency public init<P>(url: Foundation.URL?, transaction: SwiftUICore.Transaction = Transaction(), placeholder: @autoclosure @escaping () -> P) where Content == SwiftUICore._ConditionalContent<SwiftUICore.Image, P>, P : SwiftUICore.View
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s17TruvideoSdkCamera16AsyncRemoteImageV4bodyQrvp", 0) __<Content>
-}
 extension SwiftUI.Button where Label == SwiftUICore.Text {
   @_Concurrency.MainActor @preconcurrency public init(_ label: Swift.String, action: @escaping () -> Swift.Void)
 }
@@ -690,7 +679,6 @@ extension SwiftUICore.View {
   
 }
 
-extension TruvideoSdkCamera.AsyncRemoteImage : Swift.Sendable {}
 extension TruvideoSdkCamera.PrimaryButtonStyle : Swift.Sendable {}
 extension TruvideoSdkCamera.TextButtonStyle : Swift.Sendable {}
 extension TruvideoSdkCamera.DataLoadStatus : Swift.Equatable {}

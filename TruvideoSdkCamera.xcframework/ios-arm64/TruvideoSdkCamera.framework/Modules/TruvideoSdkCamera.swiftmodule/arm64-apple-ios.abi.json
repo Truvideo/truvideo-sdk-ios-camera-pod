@@ -397,484 +397,6 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
-      },
-      {
-        "kind": "Import",
-        "name": "Utilities",
-        "printedName": "Utilities",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AsyncRemoteImage",
-        "printedName": "AsyncRemoteImage",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV4bodyQrvp",
-            "mangledName": "$s17TruvideoSdkCamera16AsyncRemoteImageV4bodyQrvp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV4bodyQrvg",
-                "mangledName": "$s17TruvideoSdkCamera16AsyncRemoteImageV4bodyQrvg",
-                "moduleName": "TruvideoSdkCamera",
-                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(url:transaction:content:placeholder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncRemoteImage",
-                "printedName": "TruvideoSdkCamera.AsyncRemoteImage<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Transaction",
-                "printedName": "SwiftUI.Transaction",
-                "hasDefaultArg": true,
-                "usr": "s:7SwiftUI11TransactionV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SwiftUI.Image) -> τ_1_0",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Image",
-                    "printedName": "SwiftUI.Image",
-                    "usr": "s:7SwiftUI5ImageV"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> τ_1_1",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_1"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV3url11transaction7content11placeholderACy7SwiftUI19_ConditionalContentVyqd__qd_0_GG10Foundation3URLVSg_AH11TransactionVqd__AH0F0Vcqd_0_yctcAKRszAH4ViewRd__AhURd_0_r0_lufc",
-            "mangledName": "$s17TruvideoSdkCamera16AsyncRemoteImageV3url11transaction7content11placeholderACy7SwiftUI19_ConditionalContentVyqd__qd_0_GG10Foundation3URLVSg_AH11TransactionVqd__AH0F0Vcqd_0_yctcAKRszAH4ViewRd__AhURd_0_r0_lufc",
-            "moduleName": "TruvideoSdkCamera",
-            "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 == SwiftUI._ConditionalContent<τ_1_0, τ_1_1>, τ_1_0 : SwiftUI.View, τ_1_1 : SwiftUI.View>",
-            "sugared_genericSig": "<Content, I, P where Content == SwiftUI._ConditionalContent<I, P>, I : SwiftUI.View, P : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(url:transaction:placeholder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncRemoteImage",
-                "printedName": "TruvideoSdkCamera.AsyncRemoteImage<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Transaction",
-                "printedName": "SwiftUI.Transaction",
-                "hasDefaultArg": true,
-                "usr": "s:7SwiftUI11TransactionV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> τ_1_0",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV3url11transaction11placeholderACy7SwiftUI19_ConditionalContentVyAG0F0Vqd__GG10Foundation3URLVSg_AG11TransactionVqd__yctcALRszAG4ViewRd__lufc",
-            "mangledName": "$s17TruvideoSdkCamera16AsyncRemoteImageV3url11transaction11placeholderACy7SwiftUI19_ConditionalContentVyAG0F0Vqd__GG10Foundation3URLVSg_AG11TransactionVqd__yctcALRszAG4ViewRd__lufc",
-            "moduleName": "TruvideoSdkCamera",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 == SwiftUI._ConditionalContent<SwiftUI.Image, τ_1_0>, τ_1_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Content, P where Content == SwiftUI._ConditionalContent<SwiftUI.Image, P>, P : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(url:transaction:placeholder:content:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncRemoteImage",
-                "printedName": "TruvideoSdkCamera.AsyncRemoteImage<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Transaction",
-                "printedName": "SwiftUI.Transaction",
-                "hasDefaultArg": true,
-                "usr": "s:7SwiftUI11TransactionV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> τ_1_1",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_1"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SwiftUI.Image) -> τ_1_0",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Image",
-                    "printedName": "SwiftUI.Image",
-                    "usr": "s:7SwiftUI5ImageV"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV3url11transaction11placeholder7contentACy7SwiftUI19_ConditionalContentVyqd__qd_0_GG10Foundation3URLVSg_AH11TransactionVqd_0_yXAqd__AH0F0VctcAKRszAH4ViewRd__AhURd_0_r0_lufc",
-            "mangledName": "$s17TruvideoSdkCamera16AsyncRemoteImageV3url11transaction11placeholder7contentACy7SwiftUI19_ConditionalContentVyqd__qd_0_GG10Foundation3URLVSg_AH11TransactionVqd_0_yXAqd__AH0F0VctcAKRszAH4ViewRd__AhURd_0_r0_lufc",
-            "moduleName": "TruvideoSdkCamera",
-            "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 == SwiftUI._ConditionalContent<τ_1_0, τ_1_1>, τ_1_0 : SwiftUI.View, τ_1_1 : SwiftUI.View>",
-            "sugared_genericSig": "<Content, I, P where Content == SwiftUI._ConditionalContent<I, P>, I : SwiftUI.View, P : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(url:transaction:placeholder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncRemoteImage",
-                "printedName": "TruvideoSdkCamera.AsyncRemoteImage<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Transaction",
-                "printedName": "SwiftUI.Transaction",
-                "hasDefaultArg": true,
-                "usr": "s:7SwiftUI11TransactionV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> τ_1_0",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_1_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV3url11transaction11placeholderACy7SwiftUI19_ConditionalContentVyAG0F0Vqd__GG10Foundation3URLVSg_AG11TransactionVqd__yXAtcALRszAG4ViewRd__lufc",
-            "mangledName": "$s17TruvideoSdkCamera16AsyncRemoteImageV3url11transaction11placeholderACy7SwiftUI19_ConditionalContentVyAG0F0Vqd__GG10Foundation3URLVSg_AG11TransactionVqd__yXAtcALRszAG4ViewRd__lufc",
-            "moduleName": "TruvideoSdkCamera",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 == SwiftUI._ConditionalContent<SwiftUI.Image, τ_1_0>, τ_1_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Content, P where Content == SwiftUI._ConditionalContent<SwiftUI.Image, P>, P : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:17TruvideoSdkCamera16AsyncRemoteImageV",
-        "mangledName": "$s17TruvideoSdkCamera16AsyncRemoteImageV",
-        "moduleName": "TruvideoSdkCamera",
-        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-        "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -5152,6 +4674,37 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5691,21 +5244,13 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -6043,49 +5588,50 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
+        "name": "DI",
+        "printedName": "DI",
         "declKind": "Import",
         "moduleName": "TruvideoSdkCamera",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreMotion",
-        "printedName": "CoreMotion",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
       },
       {
         "kind": "Import",
         "name": "SwiftUICore",
         "printedName": "SwiftUICore",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "TruvideoSdkCamera",
         "declAttributes": [
@@ -6796,6 +6342,16 @@
         "moduleName": "TruvideoSdkCamera",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DI",
+        "printedName": "DI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -23977,280 +23533,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "View",
-        "printedName": "View",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "presentTruvideoSdkARCameraView",
-            "printedName": "presentTruvideoSdkARCameraView(isPresented:preset:onComplete:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Binding",
-                "printedName": "SwiftUI.Binding<Swift.Bool>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:7SwiftUI7BindingV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkARCameraConfiguration",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkARCameraConfiguration",
-                "hasDefaultArg": true,
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkARCameraConfiguration"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(TruvideoSdkCamera.TruvideoSdkCameraResult) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraResult",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraResult",
-                    "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraResult"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7SwiftUI4ViewP17TruvideoSdkCameraE07presentde8ARCameraC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0deH13ConfigurationCyAD0deF6ResultCctF",
-            "mangledName": "$s7SwiftUI4ViewP17TruvideoSdkCameraE07presentde8ARCameraC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0deH13ConfigurationCyAD0deF6ResultCctF",
-            "moduleName": "TruvideoSdkCamera",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "presentTruvideoSdkScannerCameraView",
-            "printedName": "presentTruvideoSdkScannerCameraView(isPresented:preset:onComplete:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Binding",
-                "printedName": "SwiftUI.Binding<Swift.Bool>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:7SwiftUI7BindingV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkScannerCameraConfiguration",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkScannerCameraConfiguration",
-                "hasDefaultArg": true,
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkScannerCameraConfiguration"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(TruvideoSdkCamera.TruvideoSdkCameraScannerCode?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraScannerCode?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TruvideoSdkCameraScannerCode",
-                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraScannerCode",
-                        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraScannerCode"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7SwiftUI4ViewP17TruvideoSdkCameraE07presentde7ScannerfC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0dehF13ConfigurationCyAD0defH4CodeCSgctF",
-            "mangledName": "$s7SwiftUI4ViewP17TruvideoSdkCameraE07presentde7ScannerfC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0dehF13ConfigurationCyAD0defH4CodeCSgctF",
-            "moduleName": "TruvideoSdkCamera",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "presentTruvideoSdkCameraView",
-            "printedName": "presentTruvideoSdkCameraView(isPresented:preset:onComplete:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Binding",
-                "printedName": "SwiftUI.Binding<Swift.Bool>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:7SwiftUI7BindingV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraConfiguration",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraConfiguration",
-                "hasDefaultArg": true,
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraConfiguration"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(TruvideoSdkCamera.TruvideoSdkCameraResult) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraResult",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraResult",
-                    "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraResult"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7SwiftUI4ViewP17TruvideoSdkCameraE07presentdefC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0deF13ConfigurationCyAD0deF6ResultCctF",
-            "mangledName": "$s7SwiftUI4ViewP17TruvideoSdkCameraE07presentdefC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0deF13ConfigurationCyAD0deF6ResultCctF",
-            "moduleName": "TruvideoSdkCamera",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:7SwiftUI4ViewP",
-        "mangledName": "$s7SwiftUI4ViewP",
-        "moduleName": "SwiftUICore",
-        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
-        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13.0",
-        "intro_tvOS": "13.0",
-        "intro_watchOS": "6.0",
-        "declAttributes": [
-          "Preconcurrency",
-          "TypeEraser",
-          "OriginallyDefinedIn",
-          "OriginallyDefinedIn",
-          "OriginallyDefinedIn",
-          "OriginallyDefinedIn",
-          "Available",
-          "Available",
-          "Available",
-          "Available",
-          "Custom"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "Button",
         "printedName": "Button",
         "children": [
@@ -25144,6 +24426,280 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "View",
+        "printedName": "View",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "presentTruvideoSdkARCameraView",
+            "printedName": "presentTruvideoSdkARCameraView(isPresented:preset:onComplete:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkARCameraConfiguration",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkARCameraConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkARCameraConfiguration"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TruvideoSdkCamera.TruvideoSdkCameraResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraResult",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraResult",
+                    "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP17TruvideoSdkCameraE07presentde8ARCameraC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0deH13ConfigurationCyAD0deF6ResultCctF",
+            "mangledName": "$s7SwiftUI4ViewP17TruvideoSdkCameraE07presentde8ARCameraC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0deH13ConfigurationCyAD0deF6ResultCctF",
+            "moduleName": "TruvideoSdkCamera",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentTruvideoSdkScannerCameraView",
+            "printedName": "presentTruvideoSdkScannerCameraView(isPresented:preset:onComplete:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkScannerCameraConfiguration",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkScannerCameraConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkScannerCameraConfiguration"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TruvideoSdkCamera.TruvideoSdkCameraScannerCode?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraScannerCode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TruvideoSdkCameraScannerCode",
+                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraScannerCode",
+                        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraScannerCode"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP17TruvideoSdkCameraE07presentde7ScannerfC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0dehF13ConfigurationCyAD0defH4CodeCSgctF",
+            "mangledName": "$s7SwiftUI4ViewP17TruvideoSdkCameraE07presentde7ScannerfC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0dehF13ConfigurationCyAD0defH4CodeCSgctF",
+            "moduleName": "TruvideoSdkCamera",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentTruvideoSdkCameraView",
+            "printedName": "presentTruvideoSdkCameraView(isPresented:preset:onComplete:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoSdkCameraConfiguration",
+                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraConfiguration"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TruvideoSdkCamera.TruvideoSdkCameraResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoSdkCameraResult",
+                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraResult",
+                    "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP17TruvideoSdkCameraE07presentdefC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0deF13ConfigurationCyAD0deF6ResultCctF",
+            "mangledName": "$s7SwiftUI4ViewP17TruvideoSdkCameraE07presentdefC011isPresented6preset10onCompleteQrAA7BindingVySbG_AD0deF13ConfigurationCyAD0deF6ResultCctF",
+            "moduleName": "TruvideoSdkCamera",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7SwiftUI4ViewP",
+        "mangledName": "$s7SwiftUI4ViewP",
+        "moduleName": "SwiftUICore",
+        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
+        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "Preconcurrency",
+          "TypeEraser",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "Available",
+          "Available",
+          "Available",
+          "Available",
+          "Custom"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "UIViewController",
         "printedName": "UIViewController",
         "children": [
@@ -25878,7 +25434,7 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Components\/AdaptiveOrientationLayout\/ViewModel\/AdaptiveOrientationLayoutViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 451,
+      "offset": 1694,
       "length": 1,
       "value": "0"
     },
@@ -26289,9 +25845,16 @@
       "value": "\"Error Message View\""
     },
     {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/CameraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 392,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel+Actions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6373,
+      "offset": 6240,
       "length": 2,
       "value": "10"
     },
@@ -26305,168 +25868,168 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2682,
+      "offset": 2597,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3399,
+      "offset": 3314,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4073,
+      "offset": 3988,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6039,
+      "offset": 5954,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6153,
+      "offset": 6068,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7698,
+      "offset": 7613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7962,
+      "offset": 7877,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7966,
+      "offset": 7881,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8962,
+      "offset": 8877,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9090,
+      "offset": 9005,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9209,
+      "offset": 9124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9321,
+      "offset": 9236,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9693,
+      "offset": 9608,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9855,
+      "offset": 9770,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 10071,
+      "offset": 9986,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "Array",
-      "offset": 11345,
+      "offset": 11260,
       "length": 3,
       "value": "[1]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11539,
+      "offset": 11454,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "Array",
-      "offset": 11791,
+      "offset": 11706,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "Array",
-      "offset": 17838,
+      "offset": 18162,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18094,
+      "offset": 18418,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18099,
+      "offset": 18423,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18345,
+      "offset": 18669,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18350,
+      "offset": 18674,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 22228,
+      "offset": 22603,
       "length": 5,
       "value": "false"
     },
@@ -27353,6 +26916,41 @@
       "value": "\"https:\/\/truvideo.com\/\""
     },
     {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/OrientationMonitor\/Device\/DeviceOrientationMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1004,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/OrientationMonitor\/Device\/DeviceOrientationMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1104,
+      "length": 11,
+      "value": "700000000"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/OrientationMonitor\/Device\/DeviceOrientationMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11037,
+      "length": 5,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/OrientationMonitor\/Device\/DeviceOrientationMonitor.swift",
+      "kind": "Array",
+      "offset": 11300,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/OrientationMonitor\/Device\/DeviceOrientationMonitor.swift",
+      "kind": "Array",
+      "offset": 11572,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Deprecated\/TVCamera\/DeviceOutputProcessor_Deprecation.swift",
       "kind": "IntegerLiteral",
       "offset": 7176,
@@ -27971,28 +27569,28 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/Components\/CollectionViewCell\/ImageCollectionViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 443,
+      "offset": 416,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/Components\/CollectionViewCell\/ImageCollectionViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 473,
+      "offset": 446,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/Components\/CollectionViewCell\/ImageCollectionViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 795,
+      "offset": 768,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/Components\/CollectionViewCell\/ImageCollectionViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 945,
+      "offset": 918,
       "length": 11,
       "value": "\"ImageCell\""
     },
@@ -28550,69 +28148,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/OrientationMonitor\/OrientationMonitor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4636,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/OrientationMonitor\/OrientationMonitor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8718,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/OrientationMonitor\/OrientationMonitor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8818,
-      "length": 11,
-      "value": "700000000"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/DataTypes\/Orientation\/OrientationTransition.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1303,
-      "length": 3,
-      "value": "-90"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/DataTypes\/Orientation\/OrientationTransition.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1386,
-      "length": 2,
-      "value": "90"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/DataTypes\/Orientation\/OrientationTransition.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1473,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/DataTypes\/Orientation\/OrientationTransition.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1562,
-      "length": 3,
-      "value": "-90"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/DataTypes\/Orientation\/OrientationTransition.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1651,
-      "length": 2,
-      "value": "90"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/DataTypes\/Orientation\/OrientationTransition.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1738,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Preview\/Components\/Photo\/PhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 455,
@@ -28692,7 +28227,7 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Transitions\/ScaleTransition\/ScaledTransitionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1806,
+      "offset": 1825,
       "length": 5,
       "value": "false"
     },
@@ -30584,7 +30119,7 @@
       "kind": "StringLiteral",
       "offset": 119,
       "length": 8,
-      "value": "\"78.2.2\""
+      "value": "\"78.2.3\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
@@ -30631,84 +30166,84 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 7611,
+      "offset": 7712,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 8017,
+      "offset": 8118,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 8443,
+      "offset": 8544,
       "length": 29,
       "value": "\"com.truvideo.devicePosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 8902,
+      "offset": 9003,
       "length": 28,
       "value": "\"com.truvideo.newFocusPoint\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 9345,
+      "offset": 9446,
       "length": 26,
       "value": "\"com.truvideo.newPosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 9848,
+      "offset": 9949,
       "length": 28,
       "value": "\"com.truvideo.oldFocusPoint\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 10310,
+      "offset": 10411,
       "length": 26,
       "value": "\"com.truvideo.oldPosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 10820,
+      "offset": 10921,
       "length": 40,
       "value": "\"com.truvideo.deviceDidChangeFocusPoint\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 11302,
+      "offset": 11403,
       "length": 38,
       "value": "\"com.truvideo.deviceDidChangePosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 11773,
+      "offset": 11874,
       "length": 41,
       "value": "\"com.truvideo.deviceWillChangeFocusPoint\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 12279,
+      "offset": 12380,
       "length": 39,
       "value": "\"com.truvideo.deviceWillChangePosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 29603,
+      "offset": 29704,
       "length": 2,
       "value": "10"
     },
@@ -30932,14 +30467,14 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Components\/ZoomPicker\/ViewModel\/ZoomPickerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 903,
+      "offset": 958,
       "length": 2,
       "value": "55"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Components\/ZoomPicker\/ViewModel\/ZoomPickerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 908,
+      "offset": 963,
       "length": 2,
       "value": "44"
     },
