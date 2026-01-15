@@ -30118,20 +30118,20 @@
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
       "kind": "StringLiteral",
       "offset": 119,
-      "length": 8,
-      "value": "\"78.2.3\""
+      "length": 13,
+      "value": "\"78.2.3-RC.4\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
       "kind": "StringLiteral",
-      "offset": 149,
-      "length": 6,
-      "value": "\"PROD\""
+      "offset": 154,
+      "length": 4,
+      "value": "\"RC\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
       "kind": "StringLiteral",
-      "offset": 177,
+      "offset": 180,
       "length": 3,
       "value": "\"0\""
     },
