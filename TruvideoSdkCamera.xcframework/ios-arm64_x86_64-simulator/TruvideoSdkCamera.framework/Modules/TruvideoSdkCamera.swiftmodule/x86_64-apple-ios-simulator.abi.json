@@ -4650,26 +4650,22 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
-      },
-      {
-        "kind": "Import",
         "name": "Utilities",
         "printedName": "Utilities",
         "declKind": "Import",
         "moduleName": "TruvideoSdkCamera",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -25714,7 +25710,7 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera.swift",
       "kind": "BooleanLiteral",
-      "offset": 8000,
+      "offset": 8569,
       "length": 5,
       "value": "false"
     },
@@ -25812,7 +25808,7 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/CameraIpad.swift",
       "kind": "BooleanLiteral",
-      "offset": 6402,
+      "offset": 6398,
       "length": 5,
       "value": "false"
     },
@@ -26902,16 +26898,16 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Device.swift",
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/DeviceActor.swift",
       "kind": "StringLiteral",
-      "offset": 504,
+      "offset": 445,
       "length": 10,
       "value": "\"TruVideo\""
     },
     {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Device.swift",
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/DeviceActor.swift",
       "kind": "StringLiteral",
-      "offset": 836,
+      "offset": 777,
       "length": 23,
       "value": "\"https:\/\/truvideo.com\/\""
     },
@@ -27506,42 +27502,42 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/Components\/Grid\/GalleryGrid.swift",
       "kind": "IntegerLiteral",
-      "offset": 3919,
+      "offset": 3915,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/Components\/Grid\/GalleryGrid.swift",
       "kind": "IntegerLiteral",
-      "offset": 3962,
+      "offset": 3958,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/GalleryView+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 483,
+      "offset": 979,
       "length": 14,
       "value": "\"Close button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/GalleryView+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 613,
+      "offset": 1109,
       "length": 15,
       "value": "\"Delete button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/GalleryView+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 767,
+      "offset": 1263,
       "length": 14,
       "value": "\"Gallery grid\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Gallery\/GalleryView+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 882,
+      "offset": 1378,
       "length": 19,
       "value": "\"Gallery Container\""
     },
@@ -29177,6 +29173,27 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 119,
+      "length": 13,
+      "value": "\"78.2.4-RC.6\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 154,
+      "length": 4,
+      "value": "\"RC\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 180,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Deprecated\/Camera\/UI\/Components\/ToastModifier.swift",
       "kind": "FloatLiteral",
       "offset": 258,
@@ -30113,27 +30130,6 @@
       "offset": 2462,
       "length": 3,
       "value": "0.9"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
-      "kind": "StringLiteral",
-      "offset": 119,
-      "length": 13,
-      "value": "\"78.2.3-RC.4\""
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
-      "kind": "StringLiteral",
-      "offset": 154,
-      "length": 4,
-      "value": "\"RC\""
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
-      "kind": "StringLiteral",
-      "offset": 180,
-      "length": 3,
-      "value": "\"0\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",

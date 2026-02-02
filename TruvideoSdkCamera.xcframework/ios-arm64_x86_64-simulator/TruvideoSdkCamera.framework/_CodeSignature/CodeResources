@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bq4Tu6vYCPHkXRq9NClyvr0F3i8=
+		q05dGXcX16zWqS3wHmXr+zaEdpg=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lE+rbYzSqq+06GxczoW8cDPUsUM=
+		ITNSRgsJW2+55zP719ahhl1olC4=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bq4Tu6vYCPHkXRq9NClyvr0F3i8=
+		q05dGXcX16zWqS3wHmXr+zaEdpg=
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+WfxMEitUocaCz7TiJ827dBa/lA=
+		7qa8YzBVfutbH1ifd/z+WLAoPeU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -139,7 +139,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dDe95UaYvhSAhbQYdjx0tYLkVLx6Ezm2HYdVvhFbNes=
+			Jf3nglX6wphcXRUPjwGzKo66JhZ8fujuUQcZDPn4jZw=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -167,14 +167,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r0q3en802GXu9NirzSgFTwziaVil/mVs6cTUFJuG+z4=
+			g7Q4pD94aV2jCm6m8pucusK8EiYmyn4XovdWSuLS2fk=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dDe95UaYvhSAhbQYdjx0tYLkVLx6Ezm2HYdVvhFbNes=
+			Jf3nglX6wphcXRUPjwGzKo66JhZ8fujuUQcZDPn4jZw=
 			</data>
 		</dict>
 		<key>Modules/TruvideoSdkCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -202,7 +202,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			67b7AyZGQw3NMCVc53oHTDFKE6yhFyv9LOsnUEAmx1U=
+			3q8Qfn1S3prMwGFFY4eCCwcKlwEULk6G+ZHFnH1r2Z0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
