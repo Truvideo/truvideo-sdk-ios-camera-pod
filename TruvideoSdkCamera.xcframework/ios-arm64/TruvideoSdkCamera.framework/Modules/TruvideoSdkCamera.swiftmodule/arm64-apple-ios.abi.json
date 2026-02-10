@@ -2006,6 +2006,16 @@
       },
       {
         "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2125,6 +2135,16 @@
       },
       {
         "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Telemetry",
         "printedName": "Telemetry",
         "declKind": "Import",
@@ -2146,6 +2166,26 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Utilities",
+        "printedName": "Utilities",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -2359,6 +2399,16 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TruVideoApi",
+        "printedName": "TruVideoApi",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -4640,26 +4690,6 @@
       },
       {
         "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Utilities",
-        "printedName": "Utilities",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4755,6 +4785,36 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -4778,26 +4838,6 @@
         "moduleName": "TruvideoSdkCamera",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Utilities",
-        "printedName": "Utilities",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl"
         ]
       },
       {
@@ -5466,8 +5506,46 @@
       },
       {
         "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "TruvideoSdkCamera",
         "declAttributes": [
@@ -5560,6 +5638,16 @@
         "moduleName": "TruvideoSdkCamera",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -6403,6 +6491,16 @@
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -8248,6 +8346,237 @@
       },
       {
         "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DI",
+        "printedName": "DI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TruVideoApi",
+        "printedName": "TruVideoApi",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Utilities",
+        "printedName": "Utilities",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Utilities",
+        "printedName": "Utilities",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MediaUpload",
+        "printedName": "MediaUpload",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8471,6 +8800,33 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdkCamera"
       },
       {
         "kind": "Import",
@@ -14343,518 +14699,6 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
-      },
-      {
-        "kind": "Var",
-        "name": "TruvideoSdkCamera",
-        "printedName": "TruvideoSdkCamera",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "ProtocolComposition",
-            "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraEventsInterface & TruvideoSdkCamera.TruvideoSdkCameraInterface"
-          }
-        ],
-        "declKind": "Var",
-        "usr": "s:17TruvideoSdkCameraA2A0abC15EventsInterface_AA0abcE0pvp",
-        "mangledName": "$s17TruvideoSdkCameraA2A0abC15EventsInterface_AA0abcE0pvp",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "HasInitialValue",
-          "HasStorage",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "isLet": true,
-        "hasStorage": true,
-        "accessors": [
-          {
-            "kind": "Accessor",
-            "name": "Get",
-            "printedName": "Get()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraEventsInterface & TruvideoSdkCamera.TruvideoSdkCameraInterface"
-              }
-            ],
-            "declKind": "Accessor",
-            "usr": "s:17TruvideoSdkCameraA2A0abC15EventsInterface_AA0abcE0pvg",
-            "mangledName": "$s17TruvideoSdkCameraA2A0abC15EventsInterface_AA0abcE0pvg",
-            "moduleName": "TruvideoSdkCamera",
-            "implicit": true,
-            "accessorKind": "get"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TruvideoSdkCameraProvider",
-        "printedName": "TruvideoSdkCameraProvider",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraInterface",
-                "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraInterface",
-                "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider(cpy)shared",
-            "mangledName": "$s17TruvideoSdkCamera0abC8ProviderC6sharedAA0abC9Interface_pvpZ",
-            "moduleName": "TruvideoSdkCamera",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraInterface",
-                    "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraInterface",
-                    "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider(cm)shared",
-                "mangledName": "$s17TruvideoSdkCamera0abC8ProviderC6sharedAA0abC9Interface_pvgZ",
-                "moduleName": "TruvideoSdkCamera",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraProvider",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraProvider",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider(im)init",
-            "mangledName": "$s17TruvideoSdkCamera0abC8ProviderCACycfc",
-            "moduleName": "TruvideoSdkCamera",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraProvider",
-        "mangledName": "$s17TruvideoSdkCamera0abC8ProviderC",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TruvideoSdkCameraInterface",
-        "printedName": "TruvideoSdkCameraInterface",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "camera",
-            "printedName": "camera",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraDelegate",
-                "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraDelegate",
-                "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraDelegate"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface(py)camera",
-            "mangledName": "$s17TruvideoSdkCamera0abC9InterfaceP6cameraAA0abC8Delegate_pvp",
-            "moduleName": "TruvideoSdkCamera",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraDelegate",
-                    "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraDelegate",
-                    "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraDelegate"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface(im)camera",
-                "mangledName": "$s17TruvideoSdkCamera0abC9InterfaceP6cameraAA0abC8Delegate_pvg",
-                "moduleName": "TruvideoSdkCamera",
-                "genericSig": "<τ_0_0 where τ_0_0 : TruvideoSdkCamera.TruvideoSdkCameraInterface>",
-                "sugared_genericSig": "<Self where Self : TruvideoSdkCamera.TruvideoSdkCameraInterface>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "configureTruvideoSdkAppDelegate",
-            "printedName": "configureTruvideoSdkAppDelegate(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraAppDelegate",
-                "printedName": "any TruvideoSdkCamera.TruvideoSdkCameraAppDelegate",
-                "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraAppDelegate"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface(im)configureTruvideoSdkAppDelegate:",
-            "mangledName": "$s17TruvideoSdkCamera0abC9InterfaceP09configureaB11AppDelegateyyAA0abcfG0_pF",
-            "moduleName": "TruvideoSdkCamera",
-            "genericSig": "<τ_0_0 where τ_0_0 : TruvideoSdkCamera.TruvideoSdkCameraInterface>",
-            "sugared_genericSig": "<Self where Self : TruvideoSdkCamera.TruvideoSdkCameraInterface>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraInterface",
-        "mangledName": "$s17TruvideoSdkCamera0abC9InterfaceP",
-        "moduleName": "TruvideoSdkCamera",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TruvideoSdkCameraEventsInterface",
-        "printedName": "TruvideoSdkCameraEventsInterface",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "events",
-            "printedName": "events",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AnyPublisher",
-                "printedName": "Combine.AnyPublisher<TruvideoSdkCamera.TruvideoSdkCameraEvent, Swift.Never>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraEvent",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraEvent",
-                    "usr": "s:17TruvideoSdkCamera0abC5EventV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ],
-                "usr": "s:7Combine12AnyPublisherV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17TruvideoSdkCamera0abC15EventsInterfaceP6events7Combine12AnyPublisherVyAA0abC5EventVs5NeverOGvp",
-            "mangledName": "$s17TruvideoSdkCamera0abC15EventsInterfaceP6events7Combine12AnyPublisherVyAA0abC5EventVs5NeverOGvp",
-            "moduleName": "TruvideoSdkCamera",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AnyPublisher",
-                    "printedName": "Combine.AnyPublisher<TruvideoSdkCamera.TruvideoSdkCameraEvent, Swift.Never>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TruvideoSdkCameraEvent",
-                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraEvent",
-                        "usr": "s:17TruvideoSdkCamera0abC5EventV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Never",
-                        "printedName": "Swift.Never",
-                        "usr": "s:s5NeverO"
-                      }
-                    ],
-                    "usr": "s:7Combine12AnyPublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17TruvideoSdkCamera0abC15EventsInterfaceP6events7Combine12AnyPublisherVyAA0abC5EventVs5NeverOGvg",
-                "mangledName": "$s17TruvideoSdkCamera0abC15EventsInterfaceP6events7Combine12AnyPublisherVyAA0abC5EventVs5NeverOGvg",
-                "moduleName": "TruvideoSdkCamera",
-                "genericSig": "<τ_0_0 where τ_0_0 : TruvideoSdkCamera.TruvideoSdkCameraEventsInterface>",
-                "sugared_genericSig": "<Self where Self : TruvideoSdkCamera.TruvideoSdkCameraEventsInterface>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:17TruvideoSdkCamera0abC15EventsInterfaceP",
-        "mangledName": "$s17TruvideoSdkCamera0abC15EventsInterfaceP",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TruvideoSdkCameraDelegate",
-        "printedName": "TruvideoSdkCameraDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "getTruvideoSdkCameraInformation",
-            "printedName": "getTruvideoSdkCameraInformation()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraInformation",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraInformation",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraDelegate(im)getTruvideoSdkCameraInformation",
-            "mangledName": "$s17TruvideoSdkCamera0abC8DelegateP03getabC11InformationAA0abcF0CyF",
-            "moduleName": "TruvideoSdkCamera",
-            "genericSig": "<τ_0_0 where τ_0_0 : TruvideoSdkCamera.TruvideoSdkCameraDelegate>",
-            "sugared_genericSig": "<Self where Self : TruvideoSdkCamera.TruvideoSdkCameraDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC",
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@TruvideoSdkCamera@objc(pl)TruvideoSdkCameraDelegate",
-        "mangledName": "$s17TruvideoSdkCamera0abC8DelegateP",
-        "moduleName": "TruvideoSdkCamera",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -15688,9 +15532,60 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "streamingUpload",
+            "printedName": "streamingUpload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraConfiguration(py)streamingUpload",
+            "mangledName": "$s17TruvideoSdkCamera0abC13ConfigurationC15streamingUploadSbvp",
+            "moduleName": "TruvideoSdkCamera",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraConfiguration(im)streamingUpload",
+                "mangledName": "$s17TruvideoSdkCamera0abC13ConfigurationC15streamingUploadSbvg",
+                "moduleName": "TruvideoSdkCamera",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(backResolution:backResolutions:flashMode:frontResolution:frontResolutions:imageFormat:lensFacing:mode:orientation:outputPath:)",
+            "printedName": "init(backResolution:backResolutions:flashMode:frontResolution:frontResolutions:imageFormat:lensFacing:mode:orientation:outputPath:streamingUpload:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15791,11 +15686,18 @@
                 "printedName": "Swift.String",
                 "hasDefaultArg": true,
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17TruvideoSdkCamera0abC13ConfigurationC14backResolution0E11Resolutions9flashMode05frontF00jG011imageFormat10lensFacing4mode11orientation10outputPathAcA0abcF0C_SayAOGAA0abc5FlashI0OAopA0abc5ImageL0OAA0abc4LensN0OAA0abc5MediaI0CAA0abC11OrientationOSgSStcfc",
-            "mangledName": "$s17TruvideoSdkCamera0abC13ConfigurationC14backResolution0E11Resolutions9flashMode05frontF00jG011imageFormat10lensFacing4mode11orientation10outputPathAcA0abcF0C_SayAOGAA0abc5FlashI0OAopA0abc5ImageL0OAA0abc4LensN0OAA0abc5MediaI0CAA0abC11OrientationOSgSStcfc",
+            "usr": "s:17TruvideoSdkCamera0abC13ConfigurationC14backResolution0E11Resolutions9flashMode05frontF00jG011imageFormat10lensFacing4mode11orientation10outputPath15streamingUploadAcA0abcF0C_SayAPGAA0abc5FlashI0OApqA0abc5ImageL0OAA0abc4LensN0OAA0abc5MediaI0CAA0abC11OrientationOSgSSSbtcfc",
+            "mangledName": "$s17TruvideoSdkCamera0abC13ConfigurationC14backResolution0E11Resolutions9flashMode05frontF00jG011imageFormat10lensFacing4mode11orientation10outputPath15streamingUploadAcA0abcF0C_SayAPGAA0abc5FlashI0OApqA0abc5ImageL0OAA0abc4LensN0OAA0abc5MediaI0CAA0abC11OrientationOSgSSSbtcfc",
             "moduleName": "TruvideoSdkCamera",
             "declAttributes": [
               "AccessControl",
@@ -17615,137 +17517,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TruvideoSdkCameraEvent",
-        "printedName": "TruvideoSdkCameraEvent",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "type",
-            "printedName": "type",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraEventType",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraEventType",
-                "usr": "s:17TruvideoSdkCamera0abC9EventTypeO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17TruvideoSdkCamera0abC5EventV4typeAA0abcD4TypeOvp",
-            "mangledName": "$s17TruvideoSdkCamera0abC5EventV4typeAA0abcD4TypeOvp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraEventType",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraEventType",
-                    "usr": "s:17TruvideoSdkCamera0abC9EventTypeO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17TruvideoSdkCamera0abC5EventV4typeAA0abcD4TypeOvg",
-                "mangledName": "$s17TruvideoSdkCamera0abC5EventV4typeAA0abcD4TypeOvg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "createdAt",
-            "printedName": "createdAt",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17TruvideoSdkCamera0abC5EventV9createdAt10Foundation4DateVvp",
-            "mangledName": "$s17TruvideoSdkCamera0abC5EventV9createdAt10Foundation4DateVvp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17TruvideoSdkCamera0abC5EventV9createdAt10Foundation4DateVvg",
-                "mangledName": "$s17TruvideoSdkCamera0abC5EventV9createdAt10Foundation4DateVvg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:17TruvideoSdkCamera0abC5EventV",
-        "mangledName": "$s17TruvideoSdkCamera0abC5EventV",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "TruvideoSdkCameraEventType",
         "printedName": "TruvideoSdkCameraEventType",
@@ -18546,770 +18317,6 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TruvideoSdkCameraDevice",
-        "printedName": "TruvideoSdkCameraDevice",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)id",
-            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC2idSSvp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)id",
-                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC2idSSvg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "lensFacing",
-            "printedName": "lensFacing",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraLensFacing",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraLensFacing",
-                "usr": "c:@M@TruvideoSdkCamera@E@TruvideoSdkCameraLensFacing"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)lensFacing",
-            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC10lensFacingAA0abc4LensF0Ovp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraLensFacing",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraLensFacing",
-                    "usr": "c:@M@TruvideoSdkCamera@E@TruvideoSdkCameraLensFacing"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)lensFacing",
-                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC10lensFacingAA0abc4LensF0Ovg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "resolutions",
-            "printedName": "resolutions",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[TruvideoSdkCamera.TruvideoSdkCameraResolution]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraResolution",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraResolution",
-                    "usr": "s:17TruvideoSdkCamera0abC10ResolutionC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17TruvideoSdkCamera0abC6DeviceC11resolutionsSayAA0abC10ResolutionCGvp",
-            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC11resolutionsSayAA0abC10ResolutionCGvp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[TruvideoSdkCamera.TruvideoSdkCameraResolution]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TruvideoSdkCameraResolution",
-                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraResolution",
-                        "usr": "s:17TruvideoSdkCamera0abC10ResolutionC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17TruvideoSdkCamera0abC6DeviceC11resolutionsSayAA0abC10ResolutionCGvg",
-                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC11resolutionsSayAA0abC10ResolutionCGvg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "withFlash",
-            "printedName": "withFlash",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)withFlash",
-            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC9withFlashSbvp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)withFlash",
-                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC9withFlashSbvg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isTapToFocusEnabled",
-            "printedName": "isTapToFocusEnabled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)isTapToFocusEnabled",
-            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC19isTapToFocusEnabledSbvp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)isTapToFocusEnabled",
-                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC19isTapToFocusEnabledSbvg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "sensorOrientation",
-            "printedName": "sensorOrientation",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(py)sensorOrientation",
-            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC17sensorOrientationSivp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)sensorOrientation",
-                "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC17sensorOrientationSivg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17TruvideoSdkCamera0abC6DeviceC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC6encode2toys7Encoder_p_tKF",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraDevice",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice(im)init",
-            "mangledName": "$s17TruvideoSdkCamera0abC6DeviceCACycfc",
-            "moduleName": "TruvideoSdkCamera",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice",
-        "mangledName": "$s17TruvideoSdkCamera0abC6DeviceC",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TruvideoSdkCameraInformation",
-        "printedName": "TruvideoSdkCameraInformation",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "frontCamera",
-            "printedName": "frontCamera",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraDevice",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
-                    "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(py)frontCamera",
-            "mangledName": "$s17TruvideoSdkCamera0abC11InformationC05frontC0AA0abC6DeviceCSgvp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TruvideoSdkCameraDevice",
-                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
-                        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(im)frontCamera",
-                "mangledName": "$s17TruvideoSdkCamera0abC11InformationC05frontC0AA0abC6DeviceCSgvg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "backCamera",
-            "printedName": "backCamera",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TruvideoSdkCameraDevice",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
-                    "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(py)backCamera",
-            "mangledName": "$s17TruvideoSdkCamera0abC11InformationC04backC0AA0abC6DeviceCSgvp",
-            "moduleName": "TruvideoSdkCamera",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TruvideoSdkCameraDevice",
-                        "printedName": "TruvideoSdkCamera.TruvideoSdkCameraDevice",
-                        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraDevice"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(im)backCamera",
-                "mangledName": "$s17TruvideoSdkCamera0abC11InformationC04backC0AA0abC6DeviceCSgvg",
-                "moduleName": "TruvideoSdkCamera",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TruvideoSdkCameraInformation",
-                "printedName": "TruvideoSdkCamera.TruvideoSdkCameraInformation",
-                "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation(im)init",
-            "mangledName": "$s17TruvideoSdkCamera0abC11InformationCACycfc",
-            "moduleName": "TruvideoSdkCamera",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17TruvideoSdkCamera0abC11InformationC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s17TruvideoSdkCamera0abC11InformationC6encode2toys7Encoder_p_tKF",
-            "moduleName": "TruvideoSdkCamera",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TruvideoSdkCamera@objc(cs)TruvideoSdkCameraInformation",
-        "mangledName": "$s17TruvideoSdkCamera0abC11InformationC",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -21128,23 +20135,6 @@
             "mangledName": "$sSY"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "TruvideoSdkCamera"
       },
       {
         "kind": "Import",
@@ -25444,21 +24434,21 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Audio\/AudioDevice.swift",
       "kind": "Dictionary",
-      "offset": 3711,
+      "offset": 3697,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Audio\/AudioDevice.swift",
       "kind": "StringLiteral",
-      "offset": 3760,
+      "offset": 3746,
       "length": 24,
       "value": "\"com.audio.device.queue\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Audio\/AudioDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 4614,
+      "offset": 4600,
       "length": 5,
       "value": "false"
     },
@@ -25528,42 +24518,42 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Styles\/Button\/ButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 10700,
+      "offset": 10701,
       "length": 16,
       "value": "\"Primary Button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Styles\/Button\/ButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 10781,
+      "offset": 10782,
       "length": 25,
       "value": "\"Primary Button Disabled\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Styles\/Button\/ButtonStyle.swift",
       "kind": "BooleanLiteral",
-      "offset": 10877,
+      "offset": 10878,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Styles\/Button\/ButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 10899,
+      "offset": 10900,
       "length": 13,
       "value": "\"Text Button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Styles\/Button\/ButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 10974,
+      "offset": 10975,
       "length": 22,
       "value": "\"Text Button Disabled\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Styles\/Button\/ButtonStyle.swift",
       "kind": "BooleanLiteral",
-      "offset": 11064,
+      "offset": 11065,
       "length": 4,
       "value": "true"
     },
@@ -25591,112 +24581,112 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 455,
+      "offset": 475,
       "length": 14,
       "value": "\"Close Button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 582,
+      "offset": 602,
       "length": 17,
       "value": "\"Continue Button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 745,
+      "offset": 765,
       "length": 24,
       "value": "\"Exit Confirmation View\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 862,
+      "offset": 882,
       "length": 14,
       "value": "\"Flash Button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 1004,
+      "offset": 1024,
       "length": 20,
       "value": "\"Media Counter View\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 1150,
+      "offset": 1170,
       "length": 18,
       "value": "\"Permissions View\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 1289,
+      "offset": 1309,
       "length": 23,
       "value": "\"Play and Pause Button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 1425,
+      "offset": 1445,
       "length": 19,
       "value": "\"Resolution Button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 1557,
       "length": 14,
       "value": "\"Record Video\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 2004,
+      "offset": 1703,
       "length": 16,
       "value": "\"Remaining Time\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 2127,
+      "offset": 1826,
       "length": 22,
       "value": "\"Switch Camera Button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 2241,
+      "offset": 1940,
       "length": 19,
       "value": "\"Take Photo Button\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 2339,
+      "offset": 2038,
       "length": 12,
       "value": "\"Timer View\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 2452,
+      "offset": 2151,
       "length": 10,
       "value": "\"Tool Bar\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 2580,
+      "offset": 2279,
       "length": 9,
       "value": "\"Top Bar\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera+AccessibilityLabel.swift",
       "kind": "StringLiteral",
-      "offset": 2677,
+      "offset": 2376,
       "length": 13,
       "value": "\"Zoom Picker\""
     },
@@ -25710,7 +24700,7 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Camera.swift",
       "kind": "BooleanLiteral",
-      "offset": 8569,
+      "offset": 8046,
       "length": 5,
       "value": "false"
     },
@@ -25801,14 +24791,14 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/CameraIpad.swift",
       "kind": "BooleanLiteral",
-      "offset": 352,
+      "offset": 709,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/CameraIpad.swift",
       "kind": "BooleanLiteral",
-      "offset": 6398,
+      "offset": 6755,
       "length": 5,
       "value": "false"
     },
@@ -25843,191 +24833,205 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/CameraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 392,
+      "offset": 433,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/CameraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3033,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel+Actions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6240,
+      "offset": 6227,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 769,
-      "length": 23,
-      "value": "\"DEVICE_NOT_AUTHORIZED\""
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2597,
+      "offset": 2278,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3314,
+      "offset": 2995,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3988,
+      "offset": 3669,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5954,
+      "offset": 5523,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6068,
+      "offset": 5637,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7613,
+      "offset": 6672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7877,
+      "offset": 6936,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7881,
+      "offset": 6940,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8877,
+      "offset": 7936,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9005,
+      "offset": 8064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9124,
+      "offset": 8183,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9236,
+      "offset": 8295,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9608,
+      "offset": 9174,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9770,
+      "offset": 9336,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9986,
+      "offset": 9552,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "Array",
-      "offset": 11260,
+      "offset": 10522,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
+      "kind": "Array",
+      "offset": 11196,
       "length": 3,
       "value": "[1]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11454,
+      "offset": 11390,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "Array",
-      "offset": 11706,
+      "offset": 11642,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "Array",
-      "offset": 18162,
+      "offset": 18657,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18418,
+      "offset": 18913,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18423,
+      "offset": 18918,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18669,
+      "offset": 19164,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 18674,
+      "offset": 19169,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/ViewModel\/Camera\/CameraViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 22603,
+      "offset": 23341,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Error\/CameraViewModelErrorReason.swift",
+      "kind": "StringLiteral",
+      "offset": 657,
+      "length": 23,
+      "value": "\"DEVICE_NOT_AUTHORIZED\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Deprecated\/Camera\/View Model\/CameraViewModel_Deprecation.swift",
@@ -26753,84 +25757,140 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 1281,
+      "offset": 1263,
       "length": 17,
       "value": "\"bolt.slash.fill\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1409,
       "length": 8,
       "value": "\"camera\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 1566,
+      "offset": 1544,
       "length": 13,
       "value": "\"flip-camera\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 1815,
+      "offset": 1762,
+      "length": 23,
+      "value": "\"chevron.compact.right\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
+      "kind": "StringLiteral",
+      "offset": 1945,
+      "length": 18,
+      "value": "\"checkmark.square\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
+      "kind": "StringLiteral",
+      "offset": 2105,
+      "length": 13,
+      "value": "\"list.bullet\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
+      "kind": "StringLiteral",
+      "offset": 2253,
+      "length": 10,
+      "value": "\"ellipsis\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
+      "kind": "StringLiteral",
+      "offset": 2370,
       "length": 20,
       "value": "\"iphone.rear.camera\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 1958,
+      "offset": 2513,
       "length": 6,
       "value": "\"lock\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 2089,
+      "offset": 2643,
       "length": 12,
       "value": "\"pause.fill\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 2229,
+      "offset": 2783,
       "length": 12,
       "value": "\"photo.fill\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 2407,
+      "offset": 2903,
+      "length": 7,
+      "value": "\"photo\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
+      "kind": "StringLiteral",
+      "offset": 3033,
       "length": 11,
       "value": "\"play.fill\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 2510,
+      "offset": 3178,
+      "length": 6,
+      "value": "\"plus\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
+      "kind": "StringLiteral",
+      "offset": 3312,
+      "length": 8,
+      "value": "\"square\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
+      "kind": "StringLiteral",
+      "offset": 3455,
+      "length": 12,
+      "value": "\"textformat\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
+      "kind": "StringLiteral",
+      "offset": 3559,
       "length": 7,
       "value": "\"trash\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 2687,
+      "offset": 3705,
       "length": 7,
       "value": "\"video\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 2835,
+      "offset": 3826,
       "length": 14,
       "value": "\"tap-to-focus\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Icons\/DSIcons.swift",
       "kind": "StringLiteral",
-      "offset": 3040,
+      "offset": 3970,
       "length": 7,
       "value": "\"xmark\""
     },
@@ -27043,6 +26103,41 @@
       "offset": 1615,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/ViewModel\/EditMediaViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 234,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/ViewModel\/EditMediaViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 272,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/ViewModel\/EditMediaViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/ViewModel\/EditMediaViewModel.swift",
+      "kind": "Array",
+      "offset": 479,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/ViewModel\/EditMediaViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 536,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Deprecated\/Logger\/Events.swift",
@@ -27416,69 +26511,6 @@
       "value": "\"event_configure_audio\""
     },
     {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Sink\/Sequence\/FileChunkSequence.swift",
-      "kind": "StringLiteral",
-      "offset": 724,
-      "length": 21,
-      "value": "\"CLOSE_STREAM_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Sink\/Sequence\/FileChunkSequence.swift",
-      "kind": "StringLiteral",
-      "offset": 1061,
-      "length": 20,
-      "value": "\"OPEN_STREAM_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Sink\/Sequence\/FileChunkSequence.swift",
-      "kind": "StringLiteral",
-      "offset": 1391,
-      "length": 19,
-      "value": "\"READ_CHUNK_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Sink\/Sequence\/FileChunkSequence.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3859,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Sink\/Sequence\/FileChunkSequence.swift",
-      "kind": "StringLiteral",
-      "offset": 3910,
-      "length": 38,
-      "value": "\"com.truvideo.fileChunkSequence.queue\""
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Sink\/Sequence\/FileChunkSequence.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4351,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Sink\/Sequence\/FileChunkSequence.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4355,
-      "length": 5,
-      "value": "1024"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Sink\/Sequence\/FileChunkSequence.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4363,
-      "length": 5,
-      "value": "1024"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Sink\/Sequence\/FileChunkSequence.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12860,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/Observer\/FocusObserver.swift",
       "kind": "BooleanLiteral",
       "offset": 632,
@@ -27600,322 +26632,770 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 780,
+      "offset": 611,
+      "length": 8,
+      "value": "\"Active\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 647,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 1015,
       "length": 29,
       "value": "\"AnotherAppIsUsingMicrophone\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 853,
+      "offset": 1088,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 1075,
+      "offset": 1298,
+      "length": 10,
+      "value": "\"Attempts\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 1336,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 1553,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 1111,
+      "offset": 1589,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 1320,
+      "offset": 1829,
+      "length": 15,
+      "value": "\"CancelMessage\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 1872,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 2107,
+      "length": 14,
+      "value": "\"CancelAdvise\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 2149,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 2369,
+      "length": 14,
+      "value": "\"CreationDate\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 2411,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 2607,
+      "length": 7,
+      "value": "\"Close\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 2642,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 2851,
       "length": 10,
       "value": "\"Continue\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 1358,
+      "offset": 2889,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 1578,
+      "offset": 3118,
+      "length": 8,
+      "value": "\"Delete\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 3154,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 3356,
       "length": 9,
       "value": "\"Discard\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 1615,
+      "offset": 3393,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 1873,
+      "offset": 3651,
       "length": 16,
       "value": "\"DiscardMessage\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 1917,
+      "offset": 3695,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 3906,
+      "length": 6,
+      "value": "\"Edit\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 3940,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 4133,
       "length": 6,
       "value": "\"Exit\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 2162,
+      "offset": 4167,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 2456,
+      "offset": 4461,
       "length": 19,
       "value": "\"FailedToSetPreset\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 2503,
+      "offset": 4508,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 2693,
+      "offset": 4698,
       "length": 5,
       "value": "\"FHD\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 2726,
+      "offset": 4731,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 2972,
+      "offset": 4977,
       "length": 4,
       "value": "\"HD\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 3004,
+      "offset": 5009,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 3348,
+      "offset": 5297,
+      "length": 17,
+      "value": "\"IncludeInReport\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 5342,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 5572,
+      "length": 17,
+      "value": "\"IncludeToReport\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 5617,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 5810,
+      "length": 6,
+      "value": "\"Info\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 5844,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 6054,
+      "length": 11,
+      "value": "\"IsLibrary\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 6093,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 6397,
       "length": 24,
       "value": "\"MaxClipDurationReached\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 3416,
+      "offset": 6465,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 3724,
+      "offset": 6746,
+      "length": 21,
+      "value": "\"MaxFileSizeExceeded\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 6795,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 7089,
       "length": 25,
       "value": "\"MaxNumberOfClipsReached\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 3793,
+      "offset": 7142,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 4109,
+      "offset": 7453,
       "length": 28,
       "value": "\"MaxNumberOfPicturesReached\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 4181,
+      "offset": 7525,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 4423,
+      "offset": 7735,
+      "length": 9,
+      "value": "\"MediaId\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 7772,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 7977,
+      "length": 10,
+      "value": "\"Metadata\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 8015,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 8261,
+      "length": 4,
+      "value": "\"No\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 8293,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 8563,
+      "length": 17,
+      "value": "\"NoMetadataAdded\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 8608,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 8840,
+      "length": 16,
+      "value": "\"NoStreamsFound\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 8884,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 9102,
+      "length": 13,
+      "value": "\"NoTagsAdded\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 9143,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 9380,
       "length": 14,
       "value": "\"OpenSettings\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 4465,
+      "offset": 9422,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 4793,
+      "offset": 9633,
+      "length": 6,
+      "value": "\"Part\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 9667,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 9863,
+      "length": 7,
+      "value": "\"Pause\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 9898,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 10208,
       "length": 22,
       "value": "\"PermissionDisclaimer\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 4843,
+      "offset": 10258,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 5109,
+      "offset": 10524,
       "length": 19,
       "value": "\"PermissionMessage\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 5156,
+      "offset": 10571,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 5411,
+      "offset": 10826,
       "length": 20,
       "value": "\"PresetNotSupported\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 5459,
+      "offset": 10874,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 5691,
+      "offset": 11106,
       "length": 13,
       "value": "\"Resolutions\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 5732,
+      "offset": 11147,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 5978,
+      "offset": 11346,
+      "length": 8,
+      "value": "\"Resume\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 11382,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 11578,
+      "length": 7,
+      "value": "\"Retry\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 11613,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 11859,
       "length": 4,
       "value": "\"SD\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 6010,
+      "offset": 11891,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 6285,
+      "offset": 12166,
       "length": 18,
       "value": "\"SignInToContinue\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 6331,
+      "offset": 12212,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 6623,
+      "offset": 12504,
       "length": 19,
       "value": "\"SignInToUseCamera\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 6670,
+      "offset": 12551,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 6942,
+      "offset": 12773,
+      "length": 15,
+      "value": "\"StreamDetails\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 12816,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 13032,
+      "length": 13,
+      "value": "\"StreamTitle\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 13073,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 13286,
+      "length": 8,
+      "value": "\"Stream\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 13322,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 13535,
+      "length": 8,
+      "value": "\"Status\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 13571,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 13773,
+      "length": 9,
+      "value": "\"Suspend\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 13810,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 14021,
+      "length": 6,
+      "value": "\"Tags\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 14055,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 14251,
+      "length": 7,
+      "value": "\"Title\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 14286,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 14540,
       "length": 19,
       "value": "\"TorchNotAvailable\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 6989,
+      "offset": 14587,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 7209,
+      "offset": 14807,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 7246,
+      "offset": 14844,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 7542,
+      "offset": 15075,
+      "length": 18,
+      "value": "\"UploadOperations\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 15121,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 15417,
       "length": 19,
       "value": "\"VideoDurationZero\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
       "kind": "StringLiteral",
-      "offset": 7589,
+      "offset": 15464,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 15672,
+      "length": 5,
+      "value": "\"Yes\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/I18N\/Localizations.swift",
+      "kind": "StringLiteral",
+      "offset": 15705,
       "length": 2,
       "value": "\"\""
     },
@@ -28027,51 +27507,23 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/MovieOutputProcessor.swift",
       "kind": "Array",
-      "offset": 4140,
+      "offset": 1662,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/MovieOutputProcessor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4349,
+      "offset": 1871,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/MovieOutputProcessor.swift",
       "kind": "Array",
-      "offset": 4638,
+      "offset": 2114,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/MovieOutputProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5551,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/MovieOutputProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5555,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/MovieOutputProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5560,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/MovieOutputProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5565,
-      "length": 2,
-      "value": "60"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Processors\/Movie\/Error\/MovieOutputProcessorErrorReason.swift",
@@ -28121,6 +27573,20 @@
       "offset": 3517,
       "length": 35,
       "value": "\"VIDEO_OUTPUT_CONFIGURATION_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/Components\/Metadata\/Node\/MultiMetadataNode.swift",
+      "kind": "StringLiteral",
+      "offset": 792,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/Components\/Metadata\/Node\/MultiMetadataNode.swift",
+      "kind": "Array",
+      "offset": 876,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Deprecated\/Camera\/AR\/OffsetBuffer.swift",
@@ -28263,6 +27729,20 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/Components\/Metadata\/Node\/SingleMetadataNode.swift",
+      "kind": "StringLiteral",
+      "offset": 726,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/Components\/Metadata\/Node\/SingleMetadataNode.swift",
+      "kind": "StringLiteral",
+      "offset": 801,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/DesignSystem\/Theme\/Size\/SizeTheme.swift",
       "kind": "IntegerLiteral",
       "offset": 5459,
@@ -28310,6 +27790,62 @@
       "offset": 5454,
       "length": 1,
       "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Stream\/Detail\/StreamDetailView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2829,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Stream\/Detail\/ViewModel\/StreamDetailViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1927,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Stream\/Detail\/ViewModel\/StreamDetailViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2561,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Stream\/Detail\/ViewModel\/StreamDetailViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3192,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Stream\/Detail\/ViewModel\/StreamDetailViewModel.swift",
+      "kind": "Array",
+      "offset": 4326,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Stream\/Detail\/ViewModel\/StreamDetailViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4757,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Stream\/Detail\/Components\/StreamPart\/StreamPartView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 358,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Stream\/Detail\/Components\/StreamPart\/ViewModel\/StreamPartViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2767,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Deprecated\/TVCamera\/TVCameraManager.swift",
@@ -28746,6 +28282,20 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/Components\/Tag\/Item\/TagItem.swift",
+      "kind": "StringLiteral",
+      "offset": 655,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Media\/Edit\/Components\/Tag\/Item\/TagItem.swift",
+      "kind": "StringLiteral",
+      "offset": 729,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Telemetry\/TelemetryCategory.swift",
       "kind": "StringLiteral",
       "offset": 1215,
@@ -28786,6 +28336,27 @@
       "offset": 2810,
       "length": 17,
       "value": "\"video_recording\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 119,
+      "length": 13,
+      "value": "\"78.2.5-RC.1\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 154,
+      "length": 4,
+      "value": "\"RC\""
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 180,
+      "length": 3,
+      "value": "\"0\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Telemetry\/TelemetryEventName.swift",
@@ -29171,27 +28742,6 @@
       "offset": 2048,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
-      "kind": "StringLiteral",
-      "offset": 119,
-      "length": 8,
-      "value": "\"78.2.4\""
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
-      "kind": "StringLiteral",
-      "offset": 149,
-      "length": 6,
-      "value": "\"PROD\""
-    },
-    {
-      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Version.swift",
-      "kind": "StringLiteral",
-      "offset": 177,
-      "length": 3,
-      "value": "\"0\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Deprecated\/Camera\/UI\/Components\/ToastModifier.swift",
@@ -29882,63 +29432,70 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8053,
+      "offset": 8734,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8770,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 9754,
+      "offset": 10521,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 14874,
+      "offset": 15641,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 18566,
+      "offset": 19333,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 21369,
+      "offset": 22136,
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 21657,
+      "offset": 22424,
       "length": 14,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 30593,
+      "offset": 31360,
       "length": 11,
       "value": "\"sd640x480\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 30877,
+      "offset": 31644,
       "length": 12,
       "value": "\"hd1280x720\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/External\/Configuration\/TruvideoSdkCameraConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 31194,
+      "offset": 31961,
       "length": 13,
       "value": "\"hd1920x1080\""
     },
@@ -30134,112 +29691,112 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 1020,
+      "offset": 1012,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 1249,
+      "offset": 1241,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "Dictionary",
-      "offset": 1384,
+      "offset": 1376,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 1433,
+      "offset": 1425,
       "length": 24,
       "value": "\"com.video.device.queue\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 7712,
+      "offset": 7827,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 8118,
+      "offset": 8245,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 8544,
+      "offset": 8671,
       "length": 29,
       "value": "\"com.truvideo.devicePosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 9003,
+      "offset": 9130,
       "length": 28,
       "value": "\"com.truvideo.newFocusPoint\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 9446,
+      "offset": 9573,
       "length": 26,
       "value": "\"com.truvideo.newPosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 9949,
+      "offset": 10076,
       "length": 28,
       "value": "\"com.truvideo.oldFocusPoint\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 10411,
+      "offset": 10538,
       "length": 26,
       "value": "\"com.truvideo.oldPosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 10921,
+      "offset": 11048,
       "length": 40,
       "value": "\"com.truvideo.deviceDidChangeFocusPoint\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 11403,
+      "offset": 11530,
       "length": 38,
       "value": "\"com.truvideo.deviceDidChangePosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 11874,
+      "offset": 12001,
       "length": 41,
       "value": "\"com.truvideo.deviceWillChangeFocusPoint\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "StringLiteral",
-      "offset": 12380,
+      "offset": 12507,
       "length": 39,
       "value": "\"com.truvideo.deviceWillChangePosition\""
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Devices\/Video\/VideoDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 29704,
+      "offset": 29722,
       "length": 2,
       "value": "10"
     },
@@ -30442,21 +29999,21 @@
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Components\/ZoomPicker\/ZoomPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 2549,
+      "offset": 1784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Components\/ZoomPicker\/ZoomPicker.swift",
       "kind": "IntegerLiteral",
-      "offset": 5184,
+      "offset": 5220,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jorge\/Desktop\/Projects\/Mobile\/iOS\/truvideo-ios-sdk\/Libraries\/Plugins\/Camera\/Sources\/Internal\/Views\/Camera\/Components\/ZoomPicker\/ZoomPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 6459,
+      "offset": 6495,
       "length": 5,
       "value": "false"
     },
